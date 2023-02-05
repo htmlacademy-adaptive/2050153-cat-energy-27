@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+@use "./global/fonts.scss";
+@use "./global/visually-hidden.scss";
+@use "./global/variables.scss";
+@use "./global/button.scss";
+@use "./global/mixins.scss";
+@use "./blocks/page.scss";
+@use "./blocks/body.scss";
+@use "./blocks/header.scss";
+@use "./blocks/nav.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/main.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/advantages-with-image.scss";
+@use "./blocks/advantages-reasons.scss";
+@use "./blocks/advantages-with-numbers.scss";
+@use "./blocks/search-form-link.scss";
+@use "./blocks/main-map.scss";
+@use "./blocks/map.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/copyright.scss";
+@use "./blocks/footer-social.scss";
+@use "./blocks/hashtag.scss";
+@use "./blocks/form.scss";
+@use "./blocks/feedback-form.scss";
+@use "./blocks/form-group.scss";
+@use "./blocks/control.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/photos-catalog.scss";
+@use "./blocks/video-catalog.scss";
+

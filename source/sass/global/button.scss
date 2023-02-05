@@ -1,0 +1,36 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  background-color: #68B738;
+  outline: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5EAA2F;
+}
+
+.button:active {
+  background-color: #5EAA2F;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.button:focus-visible {
+  outline: 2px solid #2D3440;
+  background-color: #68B738;
+}
+
+.button:invalid {
+  background-color: #E5E5E5;
+}

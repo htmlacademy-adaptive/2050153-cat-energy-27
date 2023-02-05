@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body body">
@@ -40,15 +41,15 @@
   </header>
   <main class="body__main-form form">
     <h1 class="visually-hidden">Страница с формой подбора программы</h1>
-    <section class="form__programm-form programm-form">
-      <div class="programm-form__main-header main-header">
+    <section class="form__programme-form programme-form">
+      <div class="programme-form__main-header main-header">
         <h2 class="main-header__title main-header__title--form">Подбор программы</h2>
         <p class="main-header__description main-header__description--form">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
       </div>
-      <form class="programm-form__form" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="programm-form__wrapper">
-          <fieldset class="programm-form__form-group form-group form-group--info-about-cat">
+      <form class="programme-form__form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="programme-form__wrapper">
+          <fieldset class="programme-form__form-group form-group form-group--info-about-cat">
             <legend class="visually-hidden">Информация о коте</legend>
             <label class="form-group__label" for="cat-name">Имя:&#42;</label>
             <input class="form-group__field" type="text" id="cat-name" name="cat-name" value="Барсик" required>
@@ -57,7 +58,7 @@
             <label class="form-group__label" for="cat-age">Возраст (лет):</label>
             <input class="form-group__field" type="number" id="cat-age" name="cat-age" value="7">
           </fieldset>
-          <fieldset class="programm-form__form-group form-group form-group--radio-form">
+          <fieldset class="programme-form__form-group form-group form-group--radio-form">
             <legend class="form-group__title">Ваше общее впечатление:</legend>
             <label class="form-group__control control">
               <input class="visually-hidden control__input" type="radio" name="feedback-group" value="Похудение"
@@ -74,7 +75,7 @@
               <span class="control__label control__label--mark-radio">Не знаю (Нужен ваш совет)</span>
             </label>
           </fieldset>
-          <fieldset class="programm-form__form-group form-group form-group--contact-info">
+          <fieldset class="programme-form__form-group form-group form-group--contact-info">
             <legend class="form-group__title">Контактные данные (владельца кота)</legend>
             <label class="form-group__label" for="email">E-mail:&#42;</label>
             <div class="form-group__container">
@@ -93,12 +94,12 @@
               </button>
             </div>
           </fieldset>
-          <fieldset class="programm-form__form-group form-group form-group--comment">
+          <fieldset class="programme-form__form-group form-group form-group--comment">
             <legend class="form-group__title">Комментарий</legend>
             <textarea class="form-group__field" name="message" placeholder="Расскажите обо всех повАдках кота"
               rows=3></textarea>
           </fieldset>
-          <fieldset class="programm-form__form-group form-group form-group--checkbox-form">
+          <fieldset class="programme-form__form-group form-group form-group--checkbox-form">
             <legend class="form-group__title">Дополнительно</legend>
             <label class="form-group__control control">
               <input class="visually-hidden control__input" type="checkbox" name="scenery-group"
@@ -118,7 +119,7 @@
               <span class="control__label control__label--mark-checkbox">Витамины</span>
             </label>
           </fieldset>
-          <button class="programm-form__button programm-form__button--sent-form button" type="submit">Отправить
+          <button class="programme-form__button programme-form__button--sent-form button" type="submit">Отправить
             заявку</button>
           <p class="programm-form__information">&#42; - Обязательные поля</p>
         </div>

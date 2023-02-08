@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   box-sizing: border-box;
-  font-family: 'Oswald';
+  font-family: $ff-titles;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -9,28 +9,28 @@
   text-align: center;
   align-items: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $color-white;
   border: none;
-  background-color: #68B738;
+  background-color: $color-basic-green;
   outline: transparent;
   text-decoration: none;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #5EAA2F;
+  background-color: $color-basic-green-2;
 }
 
 .button:active {
-  background-color: #5EAA2F;
+  background-color: $color-basic-green-2;
   color: rgb(255, 255, 255, 0.3);
 }
 
 .button:focus-visible {
-  outline: 2px solid #2D3440;
-  background-color: #68B738;
+  outline: 2px solid $color-special-dark-grey;
+  background-color: $color-basic-green;
 }
 
 .button:invalid {
-  background-color: #E5E5E5;
+  background-color: $color-special-grey;
 }

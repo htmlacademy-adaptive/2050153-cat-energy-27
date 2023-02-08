@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body body">
-  <header class="body__main-header header">
-    <a class="header__logo logo" href="index.html">
-      <img class="logo__image" src="img/logo-cat-energy.svg" width="60" height="60" alt="Логотип Кэт-энерджи.">
-      <img class="logo__text" src="img/logo-cat-energy-text.svg" width="101" height="18"
-        alt="Логотип Кэт-энерджи слова.">
-    </a>
-    <nav class="header__nav nav nav--closed nav--nojs">
-      <button class="nav__toggle" type="button">
-        <span class="visually-hidden">Кнопка меню</span>
-      </button>
-      <div class="nav__wrapper">
-        <ul class="nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="body__main main">
-    <h1 class="visually-hidden">Добро пожаловать на сайт Кэт-энерджи</h1>
+<body>
+  <div class="header-wrapper container">
+    <header class="header">
+      <a class="header__logo logo" href="index.html">
+        <img class="logo__image" src="img/logo-cat-energy.svg" width="60" height="60" alt="Логотип Кэт-энерджи.">
+        <img class="logo__text" src="img/logo-cat-energy-text.svg" width="101" height="18"
+          alt="Логотип Кэт-энерджи слова.">
+      </a>
+      <nav class="header__nav nav nav--closed nav--nojs">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Кнопка меню</span>
+        </button>
+        <div class="nav__wrapper">
+          <ul class="nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <section class="main__hero hero">
-      <div class="hero__wrapper">
-        <h2 class="hero__title">Функциональное питание для котов</h2>
-        <p class="hero__text">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="img/hero-image-product" width="280" height="270" alt="Фотография нашего товара.">
-        <a class="button hero__button" href="form.html">
-          Подбор программы
-        </a>
-      </div>
+      <h2 class="hero__title">Функциональное питание для котов</h2>
+      <p class="hero__text">Занялся собой? Займись котом!</p>
+      <img class="hero__image" src="img/hero-image-product" width="280" height="270" alt="Фотография нашего товара.">
+      <a class="button hero__button" href="form.html">
+        Подбор программы
+      </a>
     </section>
+  </div>
+  <main class="main">
+    <h1 class="visually-hidden">Добро пожаловать на сайт Кэт-энерджи</h1>
     <section class="main__programs programs">
       <h2 class="visually-hidden">Как выбрать правильную программу</h2>
-      <div class="programs__wrapper">
+      <div class="programs__wrapper container">
         <ul class="programs__list">
           <li class="programs__item">
             <h3 class="programs__title">Похудение</h3>
@@ -76,17 +77,20 @@
     </section>
     <section class="main__treatment-process treatment-process">
       <h2 class="treatment-process__title">Как это работает</h2>
-      <div class="treatment-process__wrapper">
+      <div class="treatment-process__wrapper container">
         <ul class="treatment-process__list">
           <li class="treatment-process__item">
-            <p class="treatment-process__text">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="treatment-process__item">
-            <p class="treatment-process__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            <p class="treatment-process__text">Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
           <li class="treatment-process__item">
-            <p class="treatment-process__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <p class="treatment-process__text">Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.
+            </p>
+          </li>
+          <li class="treatment-process__item">
+            <p class="treatment-process__text">Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
           </li>
           <li class="treatment-process__item">
             <p class="treatment-process__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
@@ -95,7 +99,7 @@
       </div>
     </section>
     <section class="main__example example">
-      <div class="example__wrapper">
+      <div class="example__wrapper container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -126,14 +130,14 @@
         <p class="location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="location__map-wrapper">
-        <iframe class="location__link map" src="#" width="1440" height="400" style="border:0;" allowfullscreen=""
+        <iframe class="location__link map" src="#" width="1440" height="400" style="border:0;" allowfullscreen="#"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
     </section>
   </main>
-  <footer class="body__footer footer">
-    <div class="footer__wrapper">
+  <footer class="footer">
+    <div class="container">
       <div class="footer__logo-wrapper">
         <h2 class="visually-hidden">Логотип Cat energy</h2>
         <a class="footer__logo logo" href="index.html">

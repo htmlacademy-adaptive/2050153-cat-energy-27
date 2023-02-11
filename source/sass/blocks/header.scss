@@ -1,0 +1,35 @@
+.header {
+  min-height: 66px;
+  position: relative;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  @include reset-link;
+  z-index: 1;
+  width: calc(50% + 52px);
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
+
+.header__nav {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,28 @@
+.logo {
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus{
+    opacity: 0.6;
+    outline: none;
+  }
+}
+
+.logo__image,
+.logo__text {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+
+

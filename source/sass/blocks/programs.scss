@@ -1,0 +1,248 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    gap: 30px;
+  }
+
+  @media (min-width: $vp-1440) {
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
+}
+
+.programs__item {
+  background-color: $color-white-smoke;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 22px 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    min-width: 240px;
+    height: 1px;
+    background-color: $color-gainsboro-grey;
+    bottom: 59px;
+    left: 20px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 77px 53px 57px 53px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 77px 61px 59px 52px;
+  }
+}
+
+.programs__title {
+  margin: 0;
+  font-family: $ff-oswald;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-left: 91px;
+  margin-bottom: 29px;
+
+  @media (min-width: $vp-768) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+    margin-bottom: 24px;
+    width: 44vw;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-left: 162px;
+    margin-bottom: 73px;
+    width: 250px;
+  }
+}
+
+.programs__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  min-width: 227px;
+  text-align: start;
+  margin-bottom: 42px;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 44vw;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 460px;
+    margin-bottom: 27px;
+  }
+}
+
+.programs__button {
+  background-color: inherit;
+  color: $color-black;
+  justify-content: flex-start;
+  font-size: 16px;
+  line-height: 16px;
+  position: relative;
+
+  .programs__button-arrow {
+    transform: scaleX(1);
+    transform-origin: center left;
+    transition: transform 0.5s;
+    margin-left: 15px;
+  }
+
+  &:hover {
+    background-color: inherit;
+
+    .programs__button-arrow:hover {
+      transform: scaleX(1.4);
+    }
+  }
+
+  &:active {
+    color: inherit;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 170px;
+  }
+}
+
+.programs__container {
+  position: absolute;
+  top: 21px;
+  left: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $color-apple;
+    top: 0;
+    left: calc(50% - 25px);
+    z-index: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    top: 92px;
+    left: 60vw;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      left: calc(50% - 100px);
+      top: 0;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    top: 41px;
+    left: 52px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      left: calc(50% - 50px);
+      top: 0;
+    }
+  }
+}
+
+.programs__container--slim-cat {
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: $vp-768) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.programs__container--tiger-cat {
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $vp-768) {
+    width: 268px;
+    height: 200px;
+    left: 55vw;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 134px;
+    height: 100px;
+    left: 52px;
+  }
+}
+
+.programs__image {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.programs__image--mobile {
+  display: inline-block;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: none;
+  }
+}
+
+.programs__image--tablet {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: inline-block;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: none;
+  }
+}
+
+.programs__image--desktop {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: inline-block;
+  }
+}

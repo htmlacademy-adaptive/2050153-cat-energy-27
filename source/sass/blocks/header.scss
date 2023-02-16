@@ -1,21 +1,25 @@
 .header {
   min-height: 66px;
   position: relative;
-  padding-top: 10px;
+  padding-top: 12px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+    align-items: center;
+  }
 }
 
 .header__logo {
-  @include reset-link;
   z-index: 1;
   width: calc(50% + 52px);
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     width: 174px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1440) {
     width: 202px;
   }
 }
@@ -23,13 +27,9 @@
 .header__nav {
   display: flex;
 
-  @media (min-width: $tablet-width) {
-    min-width: $tablet-width;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: $desktop-width;
-    margin: 0 auto;
+  @media (min-width: $vp-768) {
+    min-width: 440px;
+    margin-left: auto;
+    margin-right: 30px;
   }
 }

@@ -1,0 +1,121 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: max-content;
+  padding-top: 27px;
+  background-image: url(../img/hero/hero-background-mobile.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200vw;
+    min-height: 302px;
+    background-color: rgba($color-apple, 0.85);
+    top: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    margin: 0 30px;
+    padding-left: 80px;
+    margin-top: 61px;
+    align-items: flex-start;
+    background-image: none;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    margin: 0 110px;
+    margin-top: 110px;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 25px;
+  display: flex;
+  width: 276px;
+  font-family: $ff-oswald;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $color-white;
+  z-index: 1;
+
+  @media (min-width: $vp-768) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-black;
+    align-items: flex-start;
+    width: 450px;
+    margin-bottom: 40px;
+    background-color: inherit;
+    text-align: start;
+  }
+}
+
+.hero__text {
+  margin: 0;
+  font-family: $ff-oswald;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  color: $color-white;
+  margin-bottom: 29px;
+  width: 250px;
+  z-index: 1;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-black;
+    justify-content: flex-start;
+    width: 450px;
+    margin-bottom: 49px;
+    background-color: inherit;
+  }
+}
+
+.hero__image {
+  z-index: 1;
+  position: relative;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    top: 27px;
+    left: calc(50% - 162px)
+  }
+}
+
+.hero__button {
+  min-width: 280px;
+  min-height: 40px;
+  margin: 0 20px;
+  z-index: 1;
+
+  @media (min-width: $vp-768) {
+    order: 3;
+    z-index: 2;
+    margin: 0;
+    min-width: 244px;
+    min-height: 54px;
+    margin-bottom: 526px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 267px;
+  }
+}

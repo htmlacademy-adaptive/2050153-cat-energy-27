@@ -1,21 +1,28 @@
 // Colors
+// -------------------
+
 $color-black: #000000;
 $color-white: #FFFFFF;
-$color-basic-grey: #F2F2F2;
-$color-basic-green: #68B738;
-$color-basic-green-2: #5EAA2F;
-$color-special-grey-2: #EBEBEB;
-$color-special-grey: #CDCDCD;
-$color-special-dim-grey: #666666;
-$color-special-dark-grey: #444444;
-$color-special-black-grey: #222222;
-$color-status-error: #FF8282;
+$color-white-smoke: #F2F2F2;
+$color-apple: #68B738;
+$color-limeade: #5EAA2F;
+$color-whisper-grey-2: #EBEBEB;
+$color-very-light-grey: #CDCDCD;
+$color-whisper-grey: #E6E6E6;
+$color-dim-grey: #666666;
+$color-charcoal-grey: #444444;
+$color-nero-black-grey: #222222;
+$color-light-coral-error: #FF8282;
 
 // Viewports
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1440px;
+// -------------------
+
+$vp-320: 320px;
+$vp-768: 768px;
+$vp-1440: 1440px;
 
 // Typography
-$ff-main: "Lato", "Arial", sans-serif;
-$ff-titles: "Oswald", "Arial", sans-serif;
+// -------------------
+
+$ff-lato: "Lato", "Arial", sans-serif;
+$ff-oswald: "Oswald", "Arial", sans-serif;

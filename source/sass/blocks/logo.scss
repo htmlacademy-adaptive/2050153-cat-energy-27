@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 10px;
+  padding-left: 20px;
 
   &:hover {
     opacity: 0.8;
@@ -16,12 +18,34 @@
     opacity: 0.6;
     outline: none;
   }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-left: 110px;
+    min-width: 202px;
+  }
 }
 
 .logo__image,
 .logo__text {
   pointer-events: all;
   cursor: pointer;
+}
+
+.logo__text {
+  padding-top: 6px;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+
+  @media (min-width: $vp-1440) {
+    display: flex;
+  }
 }
 
 

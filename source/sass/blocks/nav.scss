@@ -5,11 +5,11 @@
 .nav--closed .site-list__item {
   display: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     display: flex;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1440) {
     display: flex;
   }
 }
@@ -50,11 +50,11 @@
     opacity: 0.1;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $vp-768) {
     display: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $vp-1440) {
     display: none;
   }
 }
@@ -66,12 +66,11 @@
 
 .nav--opened .nav__toggle {
   background-image: url(../img/toggle-close-button.svg);
-  background-color: #81B3D2;
 }
 
-// .nav--nojs .nav__toggle {
-//   display: none;
-// }
+.nav--nojs .nav__toggle {
+  display: none;
+}
 
 .nav--nojs .site-list {
   position: static;
@@ -82,7 +81,9 @@
 }
 
 .nav__list {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

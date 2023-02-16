@@ -1,0 +1,30 @@
+.header-wrapper {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  overflow: hidden;
+  min-width: $vp-320;
+  position: relative;
+
+  @media (min-width: $vp-768) {
+    background-image: none;
+  }
+
+  @media (min-width: $vp-1440) {
+    overflow: visible;
+    background-image: url(../../img/hero/hero-background-desktop.jpg);
+    background-position: top right calc(50% - 522px);
+    background-repeat: no-repeat;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50vw;
+      min-height: 696px;
+      background-color: rgba($color-apple, 0.85);
+    }
+  }
+}

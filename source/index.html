@@ -6,15 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="header-wrapper container">
     <header class="header">
       <a class="header__logo logo">
-        <img class="logo__image" src="img/logo/logo-cat-mobile.svg" width="34" height="38" alt="Логотип Кэт-энерджи.">
-        <img class="logo__text" src="img/logo/logo-cat-energy-text.svg" width="101" height="18"
-          alt="Логотип Кэт-энерджи слова.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-desktop-2.svg" width="71" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-cat-energy-tablet.svg" width="174" height="52">
+          <img class="logo__image" src="img/logo/logo-cat-mobile.svg" width="34" height="38" alt="Логотип Кэт-энерджи.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-energy-desktop-2.svg">
+          <img class="logo__text" src="img/logo/logo-cat-energy-text.svg" width="101" height="18"
+            alt="Логотип Кэт-энерджи слова.">
+        </picture>
       </a>
       <nav class="header__nav nav nav--closed nav--nojs">
         <button class="nav__toggle" type="button">
@@ -22,8 +31,8 @@
         </button>
         <div class="nav__wrapper">
           <ul class="nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current">
                 Главная
               </a>
             </li>
@@ -44,9 +53,13 @@
     <section class="hero">
       <h2 class="hero__title">Функциональное питание для котов</h2>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="img/hero/hero-image-product.png" width="280" height="270"
-        alt="Фотография нашего товара.">
-      <a class="button hero__button" href="form.html">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/hero/hero-image-product-desktop.png" width="552" height="500">
+        <source media="(min-width: 768px)" srcset="img/hero/hero-image-product-tablet.jpg" width="709" height="609">
+        <img class="hero__image" src="img/hero/hero-image-product.png" width="280" height="270"
+          alt="Фотография нашего товара.">
+      </picture>
+      <a class="hero__button button" href="form.html">
         Подбор программы
       </a>
     </section>
@@ -64,6 +77,14 @@
             <a class="button programs__button" href="catalog.html">
               Каталог slim
             </a>
+            <div class="programs__container">
+              <span class="visually-hidden">Изображение похудевшего кота</span>
+              <svg class="programs__image" width="140" height="194" viewBox="0 0 140 194" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M109.68 0h-.76A7 7 0 0 0 106 3.18c-1.13 2.16-2 4.45-2.58 6.82a3.26 3.26 0 0 1-2.96 2.68A14.68 14.68 0 0 0 90 20.24a54.62 54.62 0 0 0-3.7 8c-2.84 7.36-5.02 14.96-7.7 22.38C77.34 54 77.28 54 73.48 54c-4.54 0-4.22-.7-4.28 4.3 0 1.58.48 2.38 2.16 2.3.52 0 1.3-.26 1.5.42.2.68-.48.98-.88 1.38a18 18 0 0 1-8.66 4.88c-3.8 1.02-7.68 1.82-11.38 3.06-9.5 3.18-18.28 7.62-25.12 15.14a56 56 0 0 0-9.48 15.68C10 118.44 6.44 136.64 3.68 155.02a375.77 375.77 0 0 0-2.92 26C.4 185.3 0 189.64 0 194h66.66a4.36 4.36 0 0 0-.46-2.56 10 10 0 0 0-7.66-6.14c-1.4-.32-1.56-.74-.7-1.84a20.7 20.7 0 0 0 3.18-6.2c3.26-9.62 4.52-19.66 6.1-29.6A60 60 0 0 1 74 126a43.2 43.2 0 0 1 11.18-12.74c1.66-1.26 1.72-1.26 2 .88.2 1.42.24 2.88.34 4.32.6 9.45.48 18.93-.36 28.36-.76 7.31-.86 14.67-.3 22 .8 8.5 2.31 16.93 4.54 25.18H118a10.82 10.82 0 0 0-8.48-8.88 18 18 0 0 0-7.52.4c-1.2.28-1.7 0-1.8-1.3a112.7 112.7 0 0 1 2-31.64c2.67-12 4.71-24.14 6.12-36.36a35.5 35.5 0 0 1 4.56-14c2.38-4.24 4.46-8.64 6.8-12.9a11.75 11.75 0 0 0 .84-10.38c-.54-1.42-1.06-2.86-1.72-4.22-2-3.9-4-7.76-5.84-11.7-.98-2-.76-2.24 1.42-2.3 3.26 0 3.26 0 3.32-3.28v-1.32c0-1.38-.52-2.14-2-2h-3.04c-1.38 0-1.78-.58-1.44-2a12.48 12.48 0 0 1 10.26-8.86 44 44 0 0 1 13.24.86 2 2 0 0 0 2.5-1.28c.8-2 1.68-4 2.58-6a2 2 0 0 0-.2-2.28c-6.4-8.12-13.34-15.7-22.8-20.56a2.98 2.98 0 0 1-1.76-2.24 39.16 39.16 0 0 0-2.54-8.32A7 7 0 0 0 109.68 0Z"
+                  fill="#000" /></svg>
+            </div>
           </li>
           <li class="programs__item">
             <h3 class="programs__title">Набор массы</h3>
@@ -72,6 +93,14 @@
             <a class="button programs__button" href="catalog.html">
               Каталог pro
             </a>
+            <div class="programs__container">
+              <span class="visually-hidden">Изображение набравшего вес кота</span>
+              <svg class="programs__image" width="268" height="112" viewBox="0 0 268 112" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M246.24 11.51a30.4 30.4 0 0 1 9-9.2c2-1.4 3.2-1.4 4.4 1.2 1.6 3.8 3 7.8 1.8 12a4.59 4.59 0 0 0 .8 4.2c1.2 1.6 2.2 3.2 3.2 4.6a12.54 12.54 0 0 1 1.8 12.4 10.86 10.86 0 0 0-.4 6.2c.4 1.98.4 4.02 0 6a7.5 7.5 0 0 1-5.4 6.4 10.42 10.42 0 0 0-6.4 4 2.09 2.09 0 0 1-1.8 1c-2.4.4-8.4-5-8.4-7.4v-1.2c.2-7.2-.2-7.8-6.8-10.8a8.78 8.78 0 0 1-3.6-2.4c-1.2-1.6-2.8-1.4-4.6-.8-1.8.6-2.8 1.8-2.6 3.8.6 4.85.8 9.73.6 14.6.01.56.15 1.1.4 1.6 6.2 9 8.6 19.6 11.6 29.8 2.4 7.8 6.8 12 14.8 12.6 1.28.1 2.55.3 3.8.6a8.32 8.32 0 0 1 6.8 6.4c1.4 4.2.6 5.2-3.6 5.2h-13a6.48 6.48 0 0 1-4.6-1.6 23.39 23.39 0 0 0-6.8-4 14.53 14.53 0 0 1-6.8-5.2 57.17 57.17 0 0 0-8-9c-5.6-5.8-11.6-11.4-16.8-17.4a22.77 22.77 0 0 1-6.4-15.2c0-1.8-.4-2.6-2.4-1.8-.6.38-1.3.6-2 .6-5.6 0-8.4 3.4-10.4 8.4-1.8 4.2-4.2 8.2-6.4 12.4a20.8 20.8 0 0 0-2 8.4c0 4.8 1.2 6.4 5.6 8 2.8 1 5.4 2 6.8 4.8 1.6 3.2 1.2 4-2.2 4.2h-13.6a3.76 3.76 0 0 1-3.8-2.2l-3.6-6a12.1 12.1 0 0 1-1.4-10.8c.86-3.47.93-7.1.2-10.6a16.84 16.84 0 0 1 3.4-14c1.2-1.4 1.2-2-.8-2.4a100.13 100.13 0 0 1-23.74-8.25.2.2 0 0 1-.06-.15c-6.4-2.4-7.6-2-9.4 4.6-1.6 5.6-3.2 11.2-4.4 17-1.4 6.4.2 12.4 2.2 18.4.8 2.4 3.2 2.2 5 2.8 4 1.2 7.4 2.8 9 7 1.4 3.2 1.2 3.6-2.2 3.6-3.4 0-6.8-.2-10.4 0-3.04.06-6-.93-8.4-2.8-9.6-6.4-12.4-16.2-13.2-26.8-.4-6.6-4-11.8-8.2-16.8-.8-1-1.6-1.4-2.8-.6a88.62 88.62 0 0 1-13.4 6 53.42 53.42 0 0 0-24.4 17.6 21.26 21.26 0 0 0-4.4 10.2c-.6 3.6.4 5.2 4 6.2s5.4 3 5.8 6.8c.2 1.6-.4 2.4-2 2.4h-16.2a3.3 3.3 0 0 1-2.6-1.6c-2.52-3.1-3.86-7-3.8-11-.1-6.9.5-13.8 1.8-20.6a12.6 12.6 0 0 1 6.8-9.6c11.8-5.6 18-16.2 23.6-27.2 1.2-2.2.2-2.6-1.8-2.4-5.6.78-10.9 2.98-15.4 6.4-5.9 4.3-11.45 9.05-16.6 14.2a33.34 33.34 0 0 1-20.6 9.8c-14.6.8-21.4-7.4-20.8-20.6.13-4.5 1.83-8.81 4.8-12.2a8.5 8.5 0 0 1 9-3c3 .8 3.8 2.4 2.6 5.4-.6 1.2-1.4 2.2-2 3.4a15 15 0 0 0-2 4c-2.2 6 .8 10.2 7 10.8 6.6.6 12-2.2 17-6.2a89.88 89.88 0 0 0 16-16.6 41.58 41.58 0 0 1 28.8-16.2c4.6-.6 8.6-2.6 13-3.8a83.01 83.01 0 0 1 25.4-3.6 26 26 0 0 0 11.6-2.2c9.8-4 20-4 30.2-2 8 1.6 16 3.6 23.8 5.6 4.64.87 9.41.73 14-.4a135.6 135.6 0 0 1 26.8-4c5.92-.28 11.83.88 17.2 3.4 4 1.8 4 1.8 3 5.6Z"
+                  fill="#000" /></svg>
+            </div>
           </li>
         </ul>
       </div>
@@ -202,6 +231,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,135 @@
+.treatment-process__title {
+  margin: 0;
+  font-family: $ff-oswald;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 40px;
+  min-width: 280px;
+
+  @media (min-width: $vp-768) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+}
+
+.treatment-process__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    grid-template-columns: repeat(2, 250px);
+    row-gap: 37px;
+    column-gap: 208px;
+    counter-reset: myCounter;
+  }
+
+  @media (min-width: $vp-1440) {
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 80px;
+  }
+}
+
+.treatment-process__item {
+  display: flex;
+  align-items: flex-start;
+  min-height: 60px;
+  position: relative;
+
+  @media (min-width: $vp-768) {
+    min-height: 280px;
+
+    &::before {
+      position: absolute;
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: $color-white-smoke;
+      background-color: inherit;
+      display: inline-block;
+      text-align: center;
+      font-family: $ff-oswald;
+      font-size: 280px;
+      line-height: 280px;
+      top: 0;
+      right: 0;
+      width: max-content;
+      height: max-content;
+      z-index: -1;
+    }
+  }
+}
+
+.treatment-process__text {
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-charcoal-grey;
+  padding-left: 80px;
+  min-height: 60px;
+  align-items: center;
+  min-width: 200px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: $color-apple;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-left: 0;
+    padding-top: 151px;
+
+    &::before,
+    &::after {
+      width: 80px;
+      height: 80px;
+      top: 40px
+    }
+  }
+}
+
+.treatment-process__text--icon-leaf {
+  &::before {
+    content: url(../../img/treatment-process-leaf-icon.svg);
+  }
+}
+
+.treatment-process__text--icon-cup {
+  &::before {
+    content: url(../../img/treatment-process-cup-icon.svg);
+  }
+}
+
+.treatment-process__text--icon-cutlary {
+  &::before {
+    content: url(../../img/treatment-process-cutlary-icon.svg);
+  }
+}
+
+.treatment-process__text--icon-watch {
+  &::before {
+    content: url(../../img/treatment-process-watch-icon.svg);
+  }
+}

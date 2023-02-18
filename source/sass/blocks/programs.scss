@@ -8,6 +8,7 @@
 
   @media (min-width: $vp-768) {
     gap: 30px;
+    min-width: 708px;
   }
 
   @media (min-width: $vp-1440) {
@@ -83,7 +84,7 @@
   @media (min-width: $vp-768) {
     font-size: 16px;
     line-height: 24px;
-    width: 44vw;
+    width: 340px;
     margin-bottom: 52px;
   }
 
@@ -150,7 +151,7 @@
 
   @media (min-width: $vp-768) {
     top: 92px;
-    left: 60vw;
+    left: 446px;
 
     &::before {
       width: 200px;
@@ -195,7 +196,7 @@
   @media (min-width: $vp-768) {
     width: 268px;
     height: 200px;
-    left: 55vw;
+    left: 412px;
   }
 
   @media (min-width: $vp-1440) {

@@ -3,36 +3,47 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-width: max-content;
+  min-width: 88%;
   padding-top: 27px;
-  background-image: url(../img/hero/hero-background-mobile.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
   z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-width: $vp-320;
+    min-height: 302px;
+    background-image: url(../img/hero/hero-background-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    top: 0;
+  }
 
   &::after {
     content: "";
     position: absolute;
-    width: 200vw;
+    width: 100%;
+    min-width: $vp-320;
     min-height: 302px;
     background-color: rgba($color-apple, 0.85);
     top: 0;
   }
 
   @media (min-width: $vp-768) {
-    margin: 0 30px;
+    // margin: 0 30px;
     padding-left: 80px;
     margin-top: 61px;
     align-items: flex-start;
-    background-image: none;
 
+    &::before,
     &::after {
       display: none;
     }
   }
 
   @media (min-width: $vp-1440) {
-    margin: 0 110px;
+    max-width: 1220px;
     margin-top: 110px;
   }
 }

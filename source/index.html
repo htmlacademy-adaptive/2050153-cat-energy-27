@@ -48,8 +48,8 @@
     <header class="header">
       <a class="header__logo logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-desktop-2.svg" width="71" height="59">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-cat-energy-tablet.svg" width="174" height="52">
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-desktop-2.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-cat-energy-tablet.svg">
           <img class="logo__image" src="img/logo/logo-cat-mobile.svg" width="34" height="38" alt="Логотип Кэт-энерджи.">
         </picture>
         <picture>
@@ -159,47 +159,79 @@
         <h2 class="treatment-process__title">Как это работает</h2>
         <ol class="treatment-process__list">
           <li class="treatment-process__item">
-            <p class="treatment-process__text treatment-process__text--icon-leaf">Функциональное питание содержит только полезные питательные вещества.
+            <p class="treatment-process__text treatment-process__text--icon-leaf">Функциональное питание содержит только
+              полезные питательные вещества.
             </p>
           </li>
           <li class="treatment-process__item">
-            <p class="treatment-process__text treatment-process__text--icon-cup">Выпускается в виде порошка, который нужно лишь залить кипятком и
+            <p class="treatment-process__text treatment-process__text--icon-cup">Выпускается в виде порошка, который
+              нужно лишь залить кипятком и
               готово.
             </p>
           </li>
           <li class="treatment-process__item">
-            <p class="treatment-process__text treatment-process__text--icon-cutlary">Замените один-два приема обычной еды на наше функциональное питание.
+            <p class="treatment-process__text treatment-process__text--icon-cutlary">Замените один-два приема обычной
+              еды на наше функциональное питание.
             </p>
           </li>
           <li class="treatment-process__item">
-            <p class="treatment-process__text treatment-process__text--icon-watch">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="treatment-process__text treatment-process__text--icon-watch">Уже через месяц наслаждайтесь
+              изменениями к лучшему вашего питомца!</p>
           </li>
         </ol>
       </div>
     </section>
     <section class="main__example example">
+      <h2 class="example__title">Живой пример</h2>
       <div class="example__wrapper container">
-        <h2 class="example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов в день.</p>
-        <ul class="example__list">
-          <li class="example__item">
-            <p class="example__little-title">5 кг</p>
-            <p class="example__little-text">снижение веса</p>
-          </li>
-          <li class="example__item">
-            <p class="example__little-title">60 дней</p>
-            <p class="example__little-text">затрачено времени</p>
-          </li>
-        </ul>
-        <p class="example__little-text">Затраты на питание: 15 000 руб.</p>
+        <div class="example__summary-container">
+          <ul class="example__list">
+            <li class="example__item">
+              <p class="example__little-title">5 кг</p>
+              <p class="example__little-text">снижение веса</p>
+            </li>
+            <li class="example__item">
+              <p class="example__little-title">60 дней</p>
+              <p class="example__little-text">затрачено времени</p>
+            </li>
+          </ul>
+          <div class="example__summary-text-container">
+            <p class="example__summary-text">Затраты на питание:</p>
+            <span>15 000 руб.</span>
+          </div>
+        </div>
         <div class="example__slider">
-          <img class="example__image example__image--before" src="img/cat-slider/cat-before-mobile.png" width="140"
-            height="256" alt="Фотография кота до.">
-          <img class="example__image example__image--after" src="img/cat-slider/cat-after-mobile.png" width="140"
-            height="256" alt="Фотография кота после.">
-          <button class="example__slider-button"></button>
+          <button class="example__slider-button" type="range">
+            <span class="visually-hidden">Кнопка прокрутки</span>
+            <svg class="example__slider-button-icon-tablet" width="40" height="512" viewBox="0 0 40 512" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" width="4" height="512" rx="2" fill="currentColor" />
+              <rect x="1" y="237" width="38" height="38" rx="19" fill="#fff" />
+              <path d="m16 247-8 9 8 9v-18ZM32 256l-8-9v18l8-9Z" fill="currentColor" />
+              <rect x="1" y="237" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" /></svg>
+            <svg class="example__slider-button-icon" width="40" height="256" viewBox="0 0 40 256" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" width="4" height="256" rx="2" fill="currentColor" />
+              <rect x="1" y="109" width="38" height="38" rx="19" fill="#fff" />
+              <path d="m16 119-8 9 8 9v-18ZM32 128l-8-9v18l8-9Z" fill="currentColor" />
+              <rect x="1" y="109" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" /></svg>
+          </button>
+          <div class="example__slider-images">
+            <div class="example__container-before">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-slider/cat-before-tablet.png 1x, img/cat-slider/cat-before-tablet-2x 2x">
+                <img class="example__image example__image--before" src="img/cat-slider/cat-before-mobile.png" srcset="img/cat-slider/cat-before-mobile-2x.png 2x"
+                  width="140" height="256" alt="Фотография кота до.">
+              </picture>
+            </div>
+            <div class="example__container-after">
+              <img class="example__image example__image--after" src="img/cat-slider/cat-after-mobile.png" width="140"
+                height="256" alt="Фотография кота после.">
+            </div>
+          </div>
         </div>
       </div>
     </section>

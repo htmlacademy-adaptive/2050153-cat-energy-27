@@ -4,10 +4,19 @@
   padding-top: 12px;
   display: flex;
   flex-wrap: wrap;
+  min-width: 88%;
+  margin: 0 auto;
 
   @media (min-width: $vp-768) {
     padding: 0;
     align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $vp-1440) {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -30,6 +39,5 @@
   @media (min-width: $vp-768) {
     min-width: 440px;
     margin-left: auto;
-    margin-right: 30px;
   }
 }

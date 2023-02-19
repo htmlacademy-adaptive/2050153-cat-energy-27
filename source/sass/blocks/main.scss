@@ -22,11 +22,26 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 49px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 47px;
+  }
 }
 
 .main__example {
   display: flex;
   flex-direction: column;
+  padding-top: 25px;
+  margin-bottom: 26px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 43px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-top: 0;
+  }
 }
 
 .main__location {

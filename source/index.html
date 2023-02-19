@@ -222,9 +222,11 @@
           <div class="example__slider-images">
             <div class="example__container-before">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-slider/cat-before-tablet.png 1x, img/cat-slider/cat-before-tablet-2x 2x">
-                <img class="example__image example__image--before" src="img/cat-slider/cat-before-mobile.png" srcset="img/cat-slider/cat-before-mobile-2x.png 2x"
-                  width="140" height="256" alt="Фотография кота до.">
+                <source media="(min-width: 768px)"
+                  srcset="img/cat-slider/cat-before-tablet.png 1x, img/cat-slider/cat-before-tablet-2x 2x">
+                <img class="example__image example__image--before" src="img/cat-slider/cat-before-mobile.png"
+                  srcset="img/cat-slider/cat-before-mobile-2x.png 2x" width="140" height="256"
+                  alt="Фотография кота до.">
               </picture>
             </div>
             <div class="example__container-after">
@@ -237,14 +239,23 @@
     </section>
     <section class="main__location location">
       <div class="location__wrapper">
-        <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="location__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <div class="location__text-wrapper">
+          <p class="location__text">ул. Большая Конюшенная, д. 19/8</p>
+          <span>Санкт-Петербург</span>
+        </div>
       </div>
       <div class="location__map-wrapper">
         <iframe class="location__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124.91324918277716!2d30.323243786432027!3d59.93858043012544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca18e1d7%3A0xe1b646f62fb95e7a!2sMISHKA!5e0!3m2!1sen!2sau!4v1675911082983!5m2!1sen!2sau"
-          width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8899.11330581312!2d30.31542933855176!3d59.938350774248946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca18e1d7%3A0xe1b646f62fb95e7a!2sMISHKA!5e0!3m2!1sen!2sau!4v1676781899635!5m2!1sen!2sau"
+          width="2000" height="600" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/map/map-pin-tablet-desktop.png 1x"
+            srcset="img/map/map-pin-tablet-desktop-2x.png 2x">
+          <img class="location__map-image" src="img/map/map-pin-mobile.png" srcset="img/map/map-pin-mobile-2x.png 2x"
+            width="57" height="53" alt="Указатель на карте, где мы расположенны.">
+        </picture>
       </div>
     </section>
   </main>

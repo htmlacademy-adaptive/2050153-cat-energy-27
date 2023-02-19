@@ -255,7 +255,8 @@
   }
 
   @media (min-width: $vp-1440) {
-    left: calc(77% - 20px);
+    left: auto;
+    right: 261px;
   }
 }
 

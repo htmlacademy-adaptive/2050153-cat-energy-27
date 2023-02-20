@@ -1,0 +1,41 @@
+.footer-social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 132px;
+}
+
+.footer-social__item {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social__button {
+  text-decoration: none;
+  background-color: inherit;
+  color: $color-dim-grey;
+
+  &:hover .footer-social__icon{
+    color: $color-apple;
+  }
+
+  &:active .footer-social__icon{
+    color: rgba($color-apple, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-dim-grey;
+  }
+
+  &:invalid .footer-social__icon{
+    color: $color-very-light-grey;
+    pointer-events: none;
+  }
+}
+
+.footer-social__icon {
+  color: $color-dim-grey;
+}

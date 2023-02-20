@@ -111,10 +111,10 @@
 
   &:hover {
     background-color: inherit;
+  }
 
-    .programs__button-arrow:hover {
-      transform: scaleX(1.4);
-    }
+  &:hover .programs__button-arrow {
+    transform: scaleX(1.4);
   }
 
   &:active {

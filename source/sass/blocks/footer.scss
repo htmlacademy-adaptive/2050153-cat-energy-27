@@ -1,0 +1,61 @@
+.footer {
+  background-color: $color-white-smoke;
+}
+
+.footer-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $vp-768) {
+    padding: 55px 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 66px 8%;
+  }
+}
+
+.footer__logo-wrapper,
+.footer__social,
+.footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $color-gainsboro-grey;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+    border: none;
+    justify-content: flex-start;
+  }
+}
+
+.footer__logo-wrapper{
+  @media (min-width: $vp-768) {
+    width: fit-content;
+    margin-right: 19%;
+  }
+}
+
+.footer__social{
+  @media (min-width: $vp-768) {
+    width: 132px;
+    margin-right: 19%;
+  }
+}
+
+.footer__copyright {
+  border: none;
+  padding: 20px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
+}

@@ -31,9 +31,16 @@
 }
 
 .logo__image,
-.logo__text {
+.logo__text,
+.logo__footer {
   pointer-events: all;
   cursor: pointer;
+}
+
+.logo__footer {
+  @media (min-width: $vp-768) {
+    width: 143px;
+  }
 }
 
 .logo__text {
@@ -60,6 +67,13 @@
   @media (min-width: $vp-1440) {
     width: 71px;
     height: 59px;
+  }
+}
+
+.logo__footer-icon {
+  @media (min-width: $vp-768) {
+    width: 143px;
+    height: 27px;
   }
 }
 

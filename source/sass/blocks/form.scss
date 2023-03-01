@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
+}
+
+.form__programme-form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $vp-1440) {
+    padding: 0 7.5%;
+  }
+}
+
+.form__location {
+  display: flex;
+}

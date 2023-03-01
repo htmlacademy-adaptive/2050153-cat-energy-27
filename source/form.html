@@ -13,9 +13,16 @@
 <body>
   <header class="header">
     <a class="header__logo logo" href="index.html">
-      <img class="logo__image" src="img/logo/logo-cat-mobile.svg" width="60" height="60" alt="Логотип Кэт-энерджи.">
-      <img class="logo__text" src="img/logo/logo-cat-energy-text.svg" width="101" height="18"
-        alt="Логотип Кэт-энерджи слова.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-desktop-2.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-cat-energy-tablet.svg">
+        <img class="logo__image" src="img/logo/logo-cat-mobile.svg" width="34" height="38" alt="Логотип Кэт-энерджи.">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-energy-desktop-2.svg">
+        <img class="logo__text" src="img/logo/logo-cat-energy-text.svg" width="101" height="18"
+          alt="Логотип Кэт-энерджи слова.">
+      </picture>
     </a>
     <nav class="header__nav nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
@@ -23,18 +30,18 @@
       </button>
       <div class="nav__wrapper">
         <ul class="nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--form">
             <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--form">
             <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link">
+          <li class="site-list__item site-list__item--form">
+            <a class="site-list__link site-list__link--current">
               Подбор программы
             </a>
           </li>
@@ -45,109 +52,148 @@
   <main class="form">
     <h1 class="visually-hidden">Страница с формой подбора программы</h1>
     <section class="form__programme-form programme-form">
-      <div class="programme-form__main-header main-header">
-        <h2 class="main-header__title main-header__title--form">Подбор программы</h2>
-        <p class="main-header__description main-header__description--form">Заполните анкету, и мы подберем
+      <div class="programme-form__header-wrapper">
+        <h2 class="programme-form__header">Подбор программы</h2>
+        <p class="programme-form__description">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
       </div>
       <form class="programme-form__form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="programme-form__wrapper">
           <fieldset class="programme-form__form-group form-group form-group--info-about-cat">
             <legend class="visually-hidden">Информация о коте</legend>
-            <label class="form-group__label" for="cat-name">Имя:&#42;</label>
-            <input class="form-group__field" type="text" id="cat-name" name="cat-name" value="Барсик" required>
-            <label class="form-group__label" for="cat-weight">Вес (кг):&#42;</label>
-            <input class="form-group__field" type="number" id="cat-weight" name="cat-weight" value="7" required>
-            <label class="form-group__label" for="cat-age">Возраст (лет):</label>
-            <input class="form-group__field" type="number" id="cat-age" name="cat-age" value="7">
+            <div class="form-group__container">
+              <label class="form-group__label" for="cat-name">Имя:&#42;</label>
+              <input class="form-group__field" type="text" id="cat-name" name="cat-name" value="Барсик" required>
+            </div>
+            <div class="form-group__container">
+              <label class="form-group__label" for="cat-weight">Вес (кг):&#42;</label>
+              <input class="form-group__field" type="number" id="cat-weight" step="1" min="1" max="100"
+                name="cat-weight" value="7" required>
+            </div>
+            <div class="form-group__container">
+              <label class="form-group__label" for="cat-age">Возраст (лет):</label>
+              <input class="form-group__field" type="number" id="cat-age" step="1" min="1" max="100" name="cat-age"
+                value="7">
+            </div>
           </fieldset>
           <fieldset class="programme-form__form-group form-group form-group--radio-form">
-            <legend class="form-group__title">Ваше общее впечатление:</legend>
-            <label class="form-group__control control">
-              <input class="visually-hidden control__input" type="radio" name="feedback-group" value="Похудение"
+            <legend class="visually-hidden">Ваше общее впечатление:</legend>
+            <label class="form-group__control">
+              <input class="visually-hidden form-group__input" type="radio" name="feedback-group" value="Похудение"
                 checked>
-              <span class="control__label control__label--mark-radio">Похудение</span>
+              <span class="form-group__control-label form-group__control-label--mark-radio">Похудение</span>
             </label>
-            <label class="form-group__control control">
-              <input class="visually-hidden control__input" type="radio" name="feedback-group" value="Набор массы">
-              <span class="control__label control__label--mark-radio">Набор массы</span>
+            <label class="form-group__control">
+              <input class="visually-hidden form-group__input" type="radio" name="feedback-group" value="Набор массы">
+              <span class="form-group__control-label form-group__control-label--mark-radio">Набор массы</span>
             </label>
-            <label class="form-group__control control">
-              <input class="visually-hidden control__input" type="radio" name="feedback-group"
+            <label class="form-group__control">
+              <input class="visually-hidden form-group__input" type="radio" name="feedback-group"
                 value="Не знаю (Нужен ваш совет)">
-              <span class="control__label control__label--mark-radio">Не знаю (Нужен ваш совет)</span>
+              <span class="form-group__control-label form-group__control-label--mark-radio">Не знаю (Нужен ваш
+                совет)</span>
             </label>
           </fieldset>
-          <fieldset class="programme-form__form-group form-group form-group--contact-info">
-            <legend class="form-group__title">Контактные данные (владельца кота)</legend>
-            <label class="form-group__label" for="email">E-mail:&#42;</label>
-            <div class="form-group__container">
-              <input class="form-group__field" type="email" id="email" name="email" value="kuklachev@gmail.com"
-                placeholder="Введите e-mail" required>
-              <button class="form-group__button form-group__button--email" type="button">
-                <span class="visually-hidden">Информация об электронной почте</span>
-              </button>
-            </div>
-            <label class="form-group__label" for="phone-number">Телефон:&#42;</label>
-            <div class="form-group__container">
+        </div>
+        <fieldset class="programme-form__form-group form-group form-group--contact-info">
+          <legend class="form-group__title">
+            <span class="form-group__title-text">Контактные&nbsp;данные (владельца кота)</span>
+          </legend>
+          <div class="form-group__container">
+            <label class="form-group__label form-group__label--with-icon" for="email">
+              <span class="form-group__label-text">E&#8209;mail:&#42;</span>
+              <input class="form-group__field form-group__field--with-icon" type="email" id="email" name="email"
+                value="kuklachev@gmail.com" placeholder="Введите e-mail" required>
+              <svg class="form-group__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 8.5v8h17v-8m-17-5h17v2l-8.5 6-8.5-6v-2Z" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" /></svg>
+            </label>
+          </div>
+          <div class="form-group__container">
+            <label class="form-group__label form-group__label--with-icon" for="phone-number">
+              <span class="form-group__label-text">Телефон:&#42;</span>
               <input class="form-group__field" type="tel" id="phone-number" name="phone-number"
                 value="8 (960) 900-60-90" placeholder="Введите телефон" required>
-              <button class="form-group__button form-group__button--phone" type="button">
-                <span class="visually-hidden">Информация о контактном телефоне</span>
-              </button>
-            </div>
-          </fieldset>
-          <fieldset class="programme-form__form-group form-group form-group--comment">
-            <legend class="form-group__title">Комментарий</legend>
-            <textarea class="form-group__field" name="message" placeholder="Расскажите обо всех повАдках кота"
-              rows=3></textarea>
-          </fieldset>
-          <fieldset class="programme-form__form-group form-group form-group--checkbox-form">
-            <legend class="form-group__title">Дополнительно</legend>
-            <label class="form-group__control control">
-              <input class="visually-hidden control__input" type="checkbox" name="scenery-group"
+              <svg class="form-group__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 10h8.5m0 0L16 7.5m2.5 2.5L16 12.5m-7.5-10v5h-3v5h3v5H6c-1.5 0-2.5-1-2.5-2.5V5c0-1.5 1-2.5 2.5-2.5h2.5Z"
+                  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="programme-form__form-group form-group form-group--comment">
+          <legend class="form-group__title">
+            <span class="form-group__title-text">Комментарий</span>
+          </legend>
+          <textarea class="form-group__field form-group__field--textarea" name="message"
+            placeholder="Расскажите обо всех повАдках кота" rows=3></textarea>
+        </fieldset>
+        <fieldset class="programme-form__form-group form-group form-group--checkbox-form">
+          <legend class="form-group__title">
+            <span class="form-group__title-text">Дополнительно</span>
+          </legend>
+          <div class="form-group__checkbox-wrapper">
+            <label class="form-group__control">
+              <input class="visually-hidden form-group__input" type="checkbox" name="scenery-group"
                 value="Сахарозаменитель" checked>
-              <span class="control__label control__label--mark-checkbox">Сахарозаменитель</span>
+              <span class="form-group__control-label form-group__control-label--mark-checkbox">Сахарозаменитель</span>
             </label>
-            <label class="form-group__control control">
-              <input class="visually-hidden control__input" type="checkbox" name="scenery-group" value="Питьевая вода">
-              <span class="control__label control__label--mark-checkbox">Питьевая вода</span>
+            <label class="form-group__control">
+              <input class="visually-hidden form-group__input" type="checkbox" name="scenery-group"
+                value="Питьевая вода">
+              <span class="form-group__control-label form-group__control-label--mark-checkbox">Питьевая вода</span>
             </label>
-            <label class="form-group__control control">
-              <input class="visually-hidden control__input" type="checkbox" name="scenery-group" value="Молоко">
-              <span class="control__label control__label--mark-checkbox">Молоко</span>
+            <label class="form-group__control">
+              <input class="visually-hidden form-group__input" type="checkbox" name="scenery-group" value="Молоко">
+              <span class="form-group__control-label form-group__control-label--mark-checkbox">Молоко</span>
             </label>
-            <label class="form-group__control control">
-              <input class="visually-hidden control__input" type="checkbox" name="scenery-group" value="Витамины">
-              <span class="control__label control__label--mark-checkbox">Витамины</span>
+            <label class="form-group__control">
+              <input class="visually-hidden form-group__input" type="checkbox" name="scenery-group" value="Витамины">
+              <span class="form-group__control-label form-group__control-label--mark-checkbox">Витамины</span>
             </label>
-          </fieldset>
+          </div>
+        </fieldset>
+        <div class="programme-form__container">
           <button class="programme-form__button programme-form__button--sent-form button" type="submit">Отправить
             заявку</button>
-          <p class="programm-form__information">&#42; - Обязательные поля</p>
+          <p class="programm-form__information">&#42;&nbsp;&mdash;&nbsp;Обязательные&nbsp;поля</p>
         </div>
       </form>
     </section>
     <section class="form__location location">
       <div class="location__wrapper">
-        <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="location__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <div class="location__text-wrapper">
+          <p class="location__text">ул. Большая Конюшенная, д. 19/8</p>
+          <span>Санкт-Петербург</span>
+        </div>
       </div>
       <div class="location__map-wrapper">
         <iframe class="location__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124.91324918277716!2d30.323243786432027!3d59.93858043012544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca18e1d7%3A0xe1b646f62fb95e7a!2sMISHKA!5e0!3m2!1sen!2sau!4v1675911082983!5m2!1sen!2sau"
-        width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8899.11330581312!2d30.31542933855176!3d59.938350774248946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca18e1d7%3A0xe1b646f62fb95e7a!2sMISHKA!5e0!3m2!1sen!2sau!4v1676781899635!5m2!1sen!2sau"
+          width="2000" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/map/map-pin-tablet-desktop.png 1x"
+            srcset="img/map/map-pin-tablet-desktop-2x.png 2x">
+          <img class="location__map-image" src="img/map/map-pin-mobile.png" srcset="img/map/map-pin-mobile-2x.png 2x"
+            width="57" height="53" alt="Указатель на карте, где мы расположенны.">
+        </picture>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
-      <div class="footer__logo-wrapper">
+    <div class="footer-wrapper container">
+      <div class="footer__logo-wrapper logo">
         <h2 class="visually-hidden">Логотип Cat energy</h2>
-        <a class="footer__logo logo" href="index.html">
-          <img class="logo__text" src="img/logo/logo-cat-energy-text.svg" width="101" height="18"
-            alt="Логотип Кэт-энерджи слова.">
+        <a class="logo__footer" href="index.html">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo/footer-logo-tablet-desktop.svg">
+            <img class="logo__footer-icon" src="img/logo/footer-logo-mobile.svg" width="129" height="24"
+              alt="Логотип Кэт-энерджи.">
+          </picture>
         </a>
       </div>
       <div class="footer__social footer-social">

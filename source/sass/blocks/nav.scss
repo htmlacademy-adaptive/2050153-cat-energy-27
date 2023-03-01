@@ -78,6 +78,14 @@
 
 .nav__wrapper {
   display: flex;
+
+  @media (min-width: $vp-768) {
+    margin-right: 30px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-right: 110px;
+  }
 }
 
 .nav__list {

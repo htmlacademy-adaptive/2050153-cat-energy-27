@@ -4,7 +4,7 @@
   padding-top: 12px;
   display: flex;
   flex-wrap: wrap;
-  min-width: 88%;
+  min-width: 100%;
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
@@ -17,19 +17,23 @@
   @media (min-width: $vp-1440) {
     max-width: 1440px;
     margin: 0 auto;
+    margin-top: 54px;
   }
 }
 
 .header__logo {
   z-index: 1;
-  width: calc(50% + 52px);
+  width: calc(50% + 34px);
+  margin-left: 20px;
 
   @media (min-width: $vp-768) {
     width: 174px;
+    margin-left: 20px;
   }
 
   @media (min-width: $vp-1440) {
     width: 202px;
+    margin-left: 110px;
   }
 }
 

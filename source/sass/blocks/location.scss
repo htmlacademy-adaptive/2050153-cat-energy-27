@@ -2,12 +2,17 @@
   flex-direction: column;
   width: 100%;
   position: relative;
+
+  @media (min-width: $vp-1440) {
+    background-color: $color-white-smoke;
+  }
 }
 
 .location__wrapper {
   display: flex;
   min-width: $vp-320;
   padding: 26px 20px 26px 20px;
+  background-color: $color-white-smoke;
 
   @media (min-width: $vp-768) {
     min-width: $vp-768;
@@ -15,10 +20,8 @@
   }
 
   @media (min-width: $vp-1440) {
-    position: absolute;
     min-width: 565px;
-    top: 95px;
-    left: 8%;
+    margin: 95px 53% 95px 8%;
     z-index: 1;
     background-color: $color-white;
   }
@@ -74,6 +77,10 @@
 
   @media (min-width: $vp-1440) {
     justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-white-smoke;
   }
 }
 

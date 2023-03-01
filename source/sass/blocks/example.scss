@@ -53,16 +53,17 @@
 
 .example__wrapper {
   width: 88%;
-  padding: 0;
+  padding: 0 6%;
 
   @media (min-width: $vp-768) {
     width: 92%;
   }
 
   @media (min-width: $vp-1440) {
-    width: 85%;
     max-width: 1440px;
+    padding: 0 8%;
     padding-top: 70px;
+    width: 100%;
     position: relative;
   }
 }

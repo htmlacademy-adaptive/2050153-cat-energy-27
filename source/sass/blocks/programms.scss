@@ -1,4 +1,4 @@
-.programs__list {
+.programms__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -12,12 +12,12 @@
   }
 
   @media (min-width: $vp-1440) {
-    grid-template-columns: 570px 570px;
-    gap: 80px;
+    grid-template-columns: repeat(2, calc(50% - 2.75%));
+    gap: 5.5%;
   }
 }
 
-.programs__item {
+.programms__item {
   background-color: $color-white-smoke;
   display: flex;
   flex-direction: column;
@@ -44,11 +44,12 @@
   }
 
   @media (min-width: $vp-1440) {
+    min-width: 570px;
     padding: 77px 61px 59px 52px;
   }
 }
 
-.programs__title {
+.programms__title {
   margin: 0;
   font-family: $ff-oswald;
   font-size: 24px;
@@ -72,7 +73,7 @@
   }
 }
 
-.programs__text {
+.programms__text {
   margin: 0;
   font-size: 14px;
   line-height: 18px;
@@ -94,7 +95,7 @@
   }
 }
 
-.programs__button {
+.programms__button {
   background-color: inherit;
   color: $color-black;
   justify-content: flex-start;
@@ -102,7 +103,7 @@
   line-height: 16px;
   position: relative;
 
-  .programs__button-arrow {
+  .programms__button-arrow {
     transform: scaleX(1);
     transform-origin: center left;
     transition: transform 0.5s;
@@ -113,7 +114,7 @@
     background-color: inherit;
   }
 
-  &:hover .programs__button-arrow {
+  &:hover .programms__button-arrow {
     transform: scaleX(1.4);
   }
 
@@ -129,7 +130,7 @@
   }
 }
 
-.programs__container {
+.programms__container {
   position: absolute;
   top: 21px;
   left: 23px;
@@ -174,7 +175,7 @@
   }
 }
 
-.programs__container--slim-cat {
+.programms__container--slim-cat {
   width: 50px;
   height: 53px;
 
@@ -189,7 +190,7 @@
   }
 }
 
-.programs__container--tiger-cat {
+.programms__container--tiger-cat {
   width: 67px;
   height: 50px;
 
@@ -206,13 +207,13 @@
   }
 }
 
-.programs__image {
+.programms__image {
   display: flex;
   position: relative;
   z-index: 1;
 }
 
-.programs__image--mobile {
+.programms__image--mobile {
   display: inline-block;
 
   @media (min-width: $vp-768) {
@@ -224,7 +225,7 @@
   }
 }
 
-.programs__image--tablet {
+.programms__image--tablet {
   display: none;
 
   @media (min-width: $vp-768) {
@@ -236,7 +237,7 @@
   }
 }
 
-.programs__image--desktop {
+.programms__image--desktop {
   display: none;
 
   @media (min-width: $vp-768) {

@@ -31,7 +31,6 @@
   }
 
   @media (min-width: $vp-768) {
-    // margin: 0 30px;
     padding-left: 80px;
     margin-top: 61px;
     align-items: flex-start;
@@ -43,8 +42,9 @@
   }
 
   @media (min-width: $vp-1440) {
-    max-width: 1220px;
+    max-width: 1440px;
     margin-top: 110px;
+    margin-left: 13%;
   }
 }
 
@@ -106,8 +106,8 @@
   }
 
   @media (min-width: $vp-1440) {
-    top: 27px;
-    left: calc(50% - 162px)
+    top: -63px;
+    left: calc(50% - 254px);
   }
 }
 

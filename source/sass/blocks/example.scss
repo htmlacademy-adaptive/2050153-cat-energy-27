@@ -19,7 +19,7 @@
     }
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     border: none;
     background-color: $color-whisper-grey-3;
 
@@ -44,7 +44,7 @@
     margin-bottom: 63px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     padding: 69px 8% 76px 8%;
     margin: 0;
     background-color: $color-white;
@@ -59,7 +59,7 @@
     width: 92%;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     max-width: 1440px;
     padding: 0 8%;
     padding-top: 70px;
@@ -82,7 +82,7 @@
     line-height: 24px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     width: 440px;
   }
 }
@@ -95,7 +95,7 @@
     margin-bottom: 91px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -117,7 +117,7 @@
     margin-bottom: 0;
   } 
   
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 45px;
   }
 }
@@ -171,7 +171,7 @@
     line-height: 14px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     background-color: $color-whisper-grey-3;
   }
 }
@@ -196,7 +196,7 @@
     font-size: 20px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     flex-direction: row;
     width: 436px;
     justify-content: flex-start;
@@ -212,7 +212,7 @@
     margin-left: auto;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin: 0;
     margin-right: 63px;
   }
@@ -229,7 +229,7 @@
     padding-bottom: 100px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     padding: 0;
     position: absolute;
     top: -135px;
@@ -255,7 +255,7 @@
     color: $color-limeade;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     left: auto;
     right: 261px;
   }
@@ -287,7 +287,7 @@
     height: 512px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin: 0;
     margin-left: auto;
   }

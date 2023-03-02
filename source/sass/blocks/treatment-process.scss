@@ -28,8 +28,8 @@
     counter-reset: myCounter;
   }
 
-  @media (min-width: $vp-1440) {
-    grid-template-columns: repeat(4, 250px);
+  @media (min-width: $vp-1024) {
+    grid-template-columns: repeat(4, calc(25% - 4%));
     column-gap: 5.5%;
   }
 }

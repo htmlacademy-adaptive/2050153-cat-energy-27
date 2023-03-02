@@ -41,7 +41,7 @@
     }
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     max-width: 1440px;
     margin-top: 110px;
     margin-left: 13%;
@@ -105,9 +105,9 @@
     bottom: 0;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     top: -63px;
-    left: calc(50% - 254px);
+    left: calc(50% - 17%);
   }
 }
 
@@ -126,7 +126,7 @@
     margin-bottom: 526px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 267px;
   }
 }

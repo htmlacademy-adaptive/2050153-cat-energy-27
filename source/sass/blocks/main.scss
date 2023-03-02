@@ -13,7 +13,7 @@
     margin-bottom: 45px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 71px;
     width: 100%;
     padding: 0 8%;
@@ -29,7 +29,7 @@
     margin-bottom: 47px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     width: 100%;
     padding: 0 8%;
   }
@@ -44,7 +44,7 @@
     padding-top: 43px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     padding-top: 0;
   }
 }

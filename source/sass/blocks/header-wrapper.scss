@@ -12,7 +12,7 @@
     background-image: none;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     overflow: visible;
     background-image: url(../../img/hero/hero-background-desktop.jpg);
     background-position: top right calc(50% - 522px);

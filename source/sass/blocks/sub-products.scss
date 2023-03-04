@@ -4,7 +4,7 @@
 }
 
 .sub-products__title {
-  margin: 0;
+  margin: 0 20px;
   font-family: $ff-oswald;
   font-size: 24px;
   line-height: 24px;
@@ -17,8 +17,14 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
+    margin: 0 30px;
     margin-bottom: 80px;
     border: none;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin: 0 8%;
+    margin-bottom: 81px;
   }
 }
 
@@ -82,6 +88,21 @@
   }
 }
 
+.sub-products__wrapper {
+  margin-bottom: 35px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 86px;
+    display: grid;
+    grid-template-columns: repeat(4, 20.5%);
+    column-gap: 6%;
+  }
+}
+
 .sub-products__list {
   margin: 0;
   padding: 0;
@@ -92,6 +113,11 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 69px;
+  }
+
+  @media (min-width: $vp-1024) {
+    grid-column: 1/4;
+    margin-bottom: 0;
   }
 }
 
@@ -106,12 +132,25 @@
     padding: 26px 38px 28px 38px;
     margin: 0;
     border: 1px solid $color-very-light-grey;
-  }
-}
 
-.sub-products__item:not(:first-child) {
-  @media (min-width: $vp-768) {
-    margin-top: -1px;
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 15px 0 17px 0;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid $color-very-light-grey;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 32% 32% 28%;
+    column-gap: 4%;
+
+    &:first-child {
+      border-top: 1px solid $color-very-light-grey;
+    }
   }
 }
 
@@ -123,6 +162,14 @@
   @media (min-width: $vp-768) {
     flex-direction: row;
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $vp-1024) {
+    grid-column: 1/3;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    column-gap: 8%;
   }
 }
 
@@ -142,6 +189,10 @@
     margin: 0;
     width: 50%;
   }
+
+  @media (min-width: $vp-1024) {
+    width: 100%;
+  }
 }
 
 .sub-products__container {
@@ -156,6 +207,14 @@
     column-gap: 30px;
     row-gap: 10px;
     margin-left: auto;
+  }
+
+  @media (min-width: $vp-1024) {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -182,14 +241,17 @@
 
 .sub-products__button {
   min-height: 40px;
+
+  @media (min-width: $vp-1024) {
+    grid-column: 3/4;
+  }
 }
 
 .sub-products__promotion {
-  margin: 0 20px;
+  margin: 0;
   min-width: 280px;
   min-height: 290px;
   position: relative;
-  margin-bottom: 35px;
   display: flex;
   justify-content: center;
 
@@ -219,11 +281,8 @@
   }
 
   @media (min-width: $vp-768) {
-    margin: 0 30px;
     min-width: 707px;
     min-height: 200px;
-    position: relative;
-    margin-bottom: 76px;
     justify-content: flex-start;
 
     &::before {
@@ -237,6 +296,26 @@
       min-height: 200px;
       background-image: url(../img/catalog-icon-gift-tablet.svg);
       background-position: 11% 50%;
+    }
+  }
+
+  @media (min-width: $vp-1024) {
+    grid-column: 4/5;
+    min-width: 100%;
+    min-height: 289px;
+    justify-content: center;
+
+    &::before {
+      background-image: url(../../img/catalog-cat-background-desktop.jpg);
+      background-position: 50% 50%;
+      min-width: 20.5%;
+      min-height: 289px;
+    }
+
+    &::after {
+      min-width: 20.5%;
+      min-height: 289px;
+      background-position: 50% 56px;
     }
   }
 }
@@ -257,5 +336,12 @@
     min-width: 161px;
     margin: 71px 18% 69px 60%;
     text-align: start;
+  }
+
+  @media (min-width: $vp-1024) {
+    text-align: center;
+    width: 58%;
+    min-width: 161px;
+    margin: 185px auto 42px auto;
   }
 }

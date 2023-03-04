@@ -1,0 +1,28 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__pruducts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 68px;
+  }
+}
+
+.catalog__sub-products {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 76px;
+  }
+}
+
+.catalog__location {
+  display: flex;
+}

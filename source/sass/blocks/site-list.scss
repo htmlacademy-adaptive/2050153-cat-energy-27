@@ -112,13 +112,13 @@
   }
 }
 
-.site-list__item--form .site-list__link {
+.site-list__item--inner-page .site-list__link {
   @media (min-width: $vp-1024) {
     color: $color-black;
   }
 }
 
-.site-list__item--form .site-list__link--current::after {
+.site-list__item--inner-page .site-list__link--current::after {
   @media (min-width: $vp-1024) {
     background-color: $color-apple;
   }

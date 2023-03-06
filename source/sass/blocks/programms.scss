@@ -27,7 +27,7 @@
   &::after {
     content: "";
     position: absolute;
-    min-width: 240px;
+    min-width: calc(100% - 14%);
     height: 1px;
     background-color: $color-gainsboro-grey;
     bottom: 59px;
@@ -83,7 +83,8 @@
   @media (min-width: $vp-768) {
     font-size: 16px;
     line-height: 24px;
-    width: 340px;
+    width: 57%;
+    min-width: 340px;
     margin-bottom: 52px;
   }
 
@@ -125,6 +126,7 @@
     font-size: 20px;
     line-height: 30px;
     width: 170px;
+    margin-top: auto;
   }
 }
 
@@ -150,7 +152,10 @@
 
   @media (min-width: $vp-768) {
     top: 92px;
-    left: 446px;
+    left: 50%;
+    right: 0;
+    margin-left: auto;
+    margin-right: 53px;
 
     &::before {
       width: 200px;
@@ -163,6 +168,7 @@
   @media (min-width: $vp-1024) {
     top: 41px;
     left: 52px;
+    margin: 0;
 
     &::before {
       width: 100px;
@@ -195,7 +201,7 @@
   @media (min-width: $vp-768) {
     width: 268px;
     height: 200px;
-    left: 412px;
+    margin-right: 27px;
   }
 
   @media (min-width: $vp-1024) {

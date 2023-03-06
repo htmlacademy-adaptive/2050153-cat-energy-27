@@ -24,7 +24,7 @@
   @media (min-width: $vp-768) {
     grid-template-columns: repeat(2, 250px);
     row-gap: 37px;
-    column-gap: 208px;
+    column-gap: 22%;
     counter-reset: myCounter;
   }
 
@@ -100,6 +100,7 @@
   @media (min-width: $vp-768) {
     padding-left: 0;
     padding-top: 151px;
+    margin-right: 38px;
 
     &::before,
     &::after {

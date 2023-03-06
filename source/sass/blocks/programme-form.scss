@@ -5,7 +5,7 @@
 .programme-form__header-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 6%;
   margin-bottom: 39px;
 
   @media (min-width: $vp-768) {
@@ -80,7 +80,7 @@
 .programme-form__form-group {
   border: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 6%;
   padding-bottom: 19px;
   margin-bottom: 22px;
   border-bottom: 1px solid $color-gainsboro-grey;
@@ -135,5 +135,5 @@
     font-size: 16px;
     justify-content: flex-start;
     align-items: center;
-  }  
+  }
 }

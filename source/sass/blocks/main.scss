@@ -2,15 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $vp-768) {
+    align-items: flex-start;
+  }
 }
 
 .main__programms {
   display: flex;
   flex-direction: column;
+  padding: 0 6%;
   margin-bottom: 20px;
 
   @media (min-width: $vp-768) {
     margin-bottom: 45px;
+    width: 100%;
+    padding: 0 30px;
   }
 
   @media (min-width: $vp-1024) {
@@ -24,9 +31,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 49px;
+  padding: 0 6%;
 
   @media (min-width: $vp-768) {
+    width: 100%;
     margin-bottom: 47px;
+    padding: 0 30px;
   }
 
   @media (min-width: $vp-1024) {

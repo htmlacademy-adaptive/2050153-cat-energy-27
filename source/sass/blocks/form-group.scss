@@ -172,7 +172,8 @@
     }
   }
 
-  &:focus-visible {
+  &:focus-visible,
+  &:hover {
     outline: 2px solid $color-charcoal-grey;
   }
 
@@ -204,7 +205,8 @@
   right: 0;
 }
 
-.form-group__field:focus-visible + .form-group__icon {
+.form-group__field:focus-visible + .form-group__icon,
+.form-group__field:hover + .form-group__icon {
   color: $color-apple;
 }
 

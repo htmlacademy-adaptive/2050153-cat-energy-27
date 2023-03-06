@@ -104,11 +104,15 @@
     position: absolute;
     z-index: -1;
     bottom: 0;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $vp-1024) {
     top: -63px;
     left: calc(50% - 17%);
+    width: 552px;
+    height: 500px;
   }
 }
 

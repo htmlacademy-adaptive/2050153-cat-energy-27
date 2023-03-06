@@ -213,42 +213,27 @@
 
 .programms__image {
   display: flex;
-  position: relative;
   z-index: 1;
-}
-
-.programms__image--mobile {
-  display: inline-block;
 
   @media (min-width: $vp-768) {
-    display: none;
+    width: 140px;
+    height: 194px;
   }
 
   @media (min-width: $vp-1024) {
-    display: none;
+    width: 70px;
+    height: 97px;
   }
 }
 
-.programms__image--tablet {
-  display: none;
-
+.programms__container--tiger-cat .programms__image {
   @media (min-width: $vp-768) {
-    display: inline-block;
+    width: 268px;
+    height: 112px;
   }
 
   @media (min-width: $vp-1024) {
-    display: none;
-  }
-}
-
-.programms__image--desktop {
-  display: none;
-
-  @media (min-width: $vp-768) {
-    display: none;
-  }
-
-  @media (min-width: $vp-1024) {
-    display: inline-block;
+    width: 134px;
+    height: 56px;
   }
 }

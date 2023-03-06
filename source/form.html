@@ -168,7 +168,7 @@
     </section>
     <section class="form__location location">
       <div class="location__wrapper">
-        <h2 class="location__title">Приглашаем к&nbsp;сотрудничеству дилеров! </h2>
+        <h2 class="location__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <div class="location__text-wrapper">
           <p class="location__text">ул. Большая Конюшенная, д. 19/8</p>
           <span>Санкт-Петербург</span>
@@ -180,8 +180,12 @@
           width="2000" height="600" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <picture>
-          <source media="(min-width: 768px)" srcset="img/map/map-pin-tablet-desktop.png 1x"
-            srcset="img/map/map-pin-tablet-desktop-2x.png 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/map/map-pin-tablet-desktop.webp 1x, img/map/map-pin-tablet-desktop-2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/map/map-pin-mobile.webp 1x, img/map/map-pin-mobile-2x.webp 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/map/map-pin-tablet-desktop.png 1x, img/map/map-pin-tablet-desktop-2x.png 2x">
           <img class="location__map-image" src="img/map/map-pin-mobile.png" srcset="img/map/map-pin-mobile-2x.png 2x"
             width="57" height="53" alt="Указатель на карте, где мы расположенны.">
         </picture>

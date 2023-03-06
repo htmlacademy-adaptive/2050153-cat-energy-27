@@ -10,10 +10,10 @@
 
   @media (min-width: $vp-768) {
     background-image: none;
+    margin-bottom: 0;
   }
 
   @media (min-width: $vp-1024) {
-    overflow: visible;
     background-image: url(../../img/hero/hero-background-desktop.jpg);
     background-position: top right calc(50% - 522px);
     background-repeat: no-repeat;

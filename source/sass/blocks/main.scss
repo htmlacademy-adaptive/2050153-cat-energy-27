@@ -15,15 +15,15 @@
   margin-bottom: 20px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
     width: 100%;
     padding: 0 30px;
   }
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 71px;
+    margin-bottom: 70px;
     width: 100%;
-    padding: 0 8%;
+    padding: 0 calc(8% - 4px);
   }
 }
 
@@ -41,7 +41,8 @@
 
   @media (min-width: $vp-1024) {
     width: 100%;
-    padding: 0 8%;
+    padding: 0 calc(8% - 4px);
+    margin-bottom: -2px;
   }
 }
 
@@ -51,7 +52,7 @@
   padding-top: 25px;
 
   @media (min-width: $vp-768) {
-    padding-top: 43px;
+    padding-top: 41px;
   }
 
   @media (min-width: $vp-1024) {

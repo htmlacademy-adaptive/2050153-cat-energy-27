@@ -1,13 +1,13 @@
 .treatment-process__title {
   margin: 0;
   font-family: $ff-oswald;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 40px;
   margin-bottom: 40px;
   min-width: 280px;
 
   @media (min-width: $vp-768) {
-    font-size: 60px;
+    font-size: 56px;
     line-height: 60px;
     margin-bottom: 32px;
   }
@@ -24,13 +24,13 @@
   @media (min-width: $vp-768) {
     grid-template-columns: repeat(2, 250px);
     row-gap: 37px;
-    column-gap: 22%;
+    column-gap: 19%;
     counter-reset: myCounter;
   }
 
   @media (min-width: $vp-1024) {
     grid-template-columns: repeat(4, calc(25% - 4%));
-    column-gap: 5.5%;
+    column-gap: 5.6%;
   }
 }
 
@@ -55,10 +55,14 @@
       font-size: 280px;
       line-height: 280px;
       top: 0;
-      right: 0;
+      right: 3px;
       width: max-content;
       height: max-content;
       z-index: -1;
+    }
+
+    &:first-child::before {
+      right: 24px;
     }
   }
 }
@@ -69,7 +73,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-charcoal-grey;
-  padding-left: 80px;
+  padding-left: 82px;
   min-height: 60px;
   align-items: center;
   min-width: 200px;
@@ -88,6 +92,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2px;
+    margin-left: 2px;
   }
 
   &::after {
@@ -100,13 +106,19 @@
   @media (min-width: $vp-768) {
     padding-left: 0;
     padding-top: 151px;
-    margin-right: 38px;
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 24px;
 
     &::before,
     &::after {
       width: 80px;
       height: 80px;
-      top: 40px
+      top: 41px
+    }
+
+    &::before {
+      margin-left: 0;
     }
   }
 }

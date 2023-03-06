@@ -12,8 +12,8 @@
   }
 
   @media (min-width: $vp-1024) {
-    grid-template-columns: repeat(2, calc(50% - 2.75%));
-    gap: 5.5%;
+    grid-template-columns: repeat(2, 47%);
+    gap: 6%;
   }
 }
 
@@ -30,7 +30,7 @@
     min-width: calc(100% - 14%);
     height: 1px;
     background-color: $color-gainsboro-grey;
-    bottom: 59px;
+    bottom: 57px;
     left: 20px;
     margin-right: 20px;
   }
@@ -46,27 +46,31 @@
   @media (min-width: $vp-1024) {
     min-width: 80%;
     padding: 77px 11% 59px 9%;
+
+    &--tiger-cat {
+      padding-left: 10%;
+    }
   }
 }
 
 .programms__title {
   margin: 0;
   font-family: $ff-oswald;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 37px;
   text-transform: uppercase;
-  margin-left: 91px;
+  margin-left: 73px;
   margin-bottom: 29px;
 
   @media (min-width: $vp-768) {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 36px;
     margin-left: 0;
     margin-bottom: 24px;
   }
 
   @media (min-width: $vp-1024) {
-    margin-left: 42%;
+    margin-left: 35.6%;
     margin-bottom: 73px;
   }
 }
@@ -106,7 +110,7 @@
     transform: scaleX(1);
     transform-origin: center left;
     transition: transform 0.5s;
-    margin-left: 15px;
+    margin-left: 26px;
   }
 
   &:hover {
@@ -132,8 +136,8 @@
 
 .programms__container {
   position: absolute;
-  top: 21px;
-  left: 23px;
+  top: 23px;
+  left: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,7 +159,7 @@
     left: 50%;
     right: 0;
     margin-left: auto;
-    margin-right: 53px;
+    margin-right: 61px;
 
     &::before {
       width: 200px;
@@ -174,7 +178,7 @@
       width: 100px;
       height: 100px;
       left: calc(50% - 50px);
-      top: 0;
+      top: 5px;
     }
   }
 }
@@ -197,6 +201,7 @@
 .programms__container--tiger-cat {
   width: 67px;
   height: 50px;
+  left: 16px;
 
   @media (min-width: $vp-768) {
     width: 268px;
@@ -207,26 +212,31 @@
   @media (min-width: $vp-1024) {
     width: 134px;
     height: 100px;
-    left: 30px;
+    left: 37px;
   }
 }
 
 .programms__image {
   display: flex;
   z-index: 1;
+  margin-top: -6px;
 
   @media (min-width: $vp-768) {
     width: 140px;
     height: 194px;
+    margin-top: -35px;
   }
 
   @media (min-width: $vp-1024) {
     width: 70px;
     height: 97px;
+    margin-top: -14px;
   }
 }
 
 .programms__container--tiger-cat .programms__image {
+  margin-top: 2px;
+
   @media (min-width: $vp-768) {
     width: 268px;
     height: 112px;

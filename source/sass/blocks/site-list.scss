@@ -90,6 +90,8 @@
   @media (min-width: $vp-1024) {
     color: $color-white;
     background-color: inherit;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -103,12 +105,13 @@
   position: absolute;
   height: 2px;
   width: 100%;
-  top: 35px;
+  top: 33px;
   left: 0;
   background-color: $color-apple;
 
   @media (min-width: $vp-1024) {
     background-color: $color-white;
+    top: 35px;
   }
 }
 

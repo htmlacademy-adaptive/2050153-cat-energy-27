@@ -22,8 +22,8 @@
 
   @media (min-width: $vp-1024) {
     min-width: 39%;
-    margin: 95px 53% 0 8%;
-    padding: 60px 4% 48px 4%;
+    margin: 95px 53% 0 calc(8% - 4px);
+    padding: 59px 5% 58px 5.5%;
     z-index: 1;
     background-color: $color-white;
   }
@@ -32,7 +32,7 @@
 .location__title {
   margin: 0;
   font-family: $ff-oswald;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-black-2;
@@ -41,14 +41,14 @@
   margin-right: auto;
 
   @media (min-width: $vp-768) {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 26px;
     width: 175px;
   }
 
   @media (min-width: $vp-1024) {
     width: 48%;
-    margin-right: 5px;
+    margin-right: 84px;
   }
 }
 
@@ -71,6 +71,7 @@
   @media (min-width: $vp-1024) {
     width: 48%;
     margin: 0;
+    text-align: left;
   }
 }
 
@@ -78,7 +79,8 @@
   margin: 0;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 16px;
+    margin-bottom: 19px;
+    margin-top: -3px;
   }
 }
 
@@ -107,16 +109,18 @@
   @media (min-width: $vp-1024) {
     object-fit: contain;
     overflow: visible;
-  } 
+  }
 }
 
 .location__map-image {
   position: absolute;
-  top: calc(50% - 46px);
-  left: calc(50% - 29px);
+  top: calc(50% - 42px);
+  left: calc(50% - 25px);
 
   @media (min-width: $vp-768) {
     width: 113px;
     height: 106px;
+    top: calc(50% - 56px);
+    left: calc(50% - 50px);
   }
 }

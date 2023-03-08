@@ -123,4 +123,9 @@
     top: calc(50% - 56px);
     left: calc(50% - 50px);
   }
+
+  @media (min-width: $vp-1024) {
+    top: calc(45% - 49px);
+    left: calc(67% - 55px);
+  }
 }

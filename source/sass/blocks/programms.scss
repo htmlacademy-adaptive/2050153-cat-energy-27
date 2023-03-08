@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $vp-1024) {
-    margin-left: 35.6%;
+    margin-left: calc(20% + 74px);
     margin-bottom: 73px;
   }
 }

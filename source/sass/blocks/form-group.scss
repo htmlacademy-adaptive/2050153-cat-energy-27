@@ -13,9 +13,9 @@
 .form-group--contact-info {
   @media (min-width: $vp-1024) {
     display: grid;
-    grid-template-columns: repeat(2, calc(50% - 2.5%));
+    grid-template-columns: repeat(2, calc(50% - 3.5%));
     row-gap: 32px;
-    column-gap: 5%;
+    column-gap: 6.5%;
   }
 }
 
@@ -31,6 +31,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    width: 100%;
   }
 }
 
@@ -40,7 +41,7 @@
   display: inline-flex;
 
   @media (min-width: $vp-768) {
-    margin-left: 37px;
+    margin-left: 0;
   }
 
   @media (min-width: $vp-1024) {
@@ -148,6 +149,10 @@
 
 .form-group__label-text {
   margin-right: 13px;
+
+  @media (min-width: $vp-768) {
+    margin-right: 23px;
+  }
 }
 
 .form-group__field {
@@ -188,7 +193,7 @@
 
   @media (min-width: $vp-768) {
     min-height: 52px;
-    padding: 11px 20px;
+    padding: 11px 16px 11px 20px;
   }
 }
 
@@ -203,6 +208,10 @@
   position: absolute;
   top: calc(50% - 8.5px);
   right: 0;
+
+  @media (min-width: $vp-768) {
+    margin-right: 18px;
+  }
 }
 
 .form-group__field:focus-visible + .form-group__icon,
@@ -223,8 +232,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px;
-    margin-bottom: 75px;
+    padding: 27px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $vp-1024) {
@@ -239,6 +248,16 @@
 
   @media (min-width: $vp-768) {
     min-width: 630px;
+
+    & .form-group__title {
+      margin-bottom: 58px;
+    }
+  }
+
+  @media (min-width: $vp-1024) {
+    & .form-group__title {
+      margin-bottom: 56px;
+    }
   }
 }
 
@@ -250,12 +269,19 @@
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 2.5%));
     row-gap: 32px;
-    column-gap: 5%;
+    column-gap: 7%;
     min-width: 630px;
+
+    & .form-group__control:not(:last-child) {
+      @media (min-width: $vp-768) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   @media (min-width: $vp-1024) {
     grid-template-columns: repeat(4, calc(25% - 3.75%));
+    column-gap: 5.5%;
   }
 }
 
@@ -264,11 +290,7 @@
 }
 
 .form-group__control:not(:last-child) {
-  margin-bottom: 13px;
-}
-
-.form-group__checkbox-wrapper .form-group__control:not(:last-child) {
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 
 .form-group__input {

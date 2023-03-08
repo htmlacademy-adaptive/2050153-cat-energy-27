@@ -84,6 +84,10 @@
 .nav__wrapper {
   display: flex;
   width: 100%;
+
+  @media (min-width: $vp-1024) {
+    width: 100%;
+  }
 }
 
 .nav__list {

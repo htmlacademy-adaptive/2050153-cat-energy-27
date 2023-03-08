@@ -9,11 +9,11 @@
   margin-bottom: 25px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 68px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $vp-1024) {
-    margin: 0 8%;
+    margin: 0 calc(8% - 4px);
     margin-bottom: 75px;
   }
 }
@@ -34,4 +34,10 @@
 
 .catalog__location {
   display: flex;
+
+  @media (min-width: $vp-1024) {
+    & .location__wrapper {
+      padding-bottom: 42px;
+    }
+  }
 }

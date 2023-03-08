@@ -9,6 +9,6 @@
   }
 
   @media (min-width: $vp-1024) {
-    padding: 0 8%;
+    padding: 0 calc(8% - 4px);
   }
 }

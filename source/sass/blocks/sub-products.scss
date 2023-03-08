@@ -6,7 +6,7 @@
 .sub-products__title {
   margin: 0 20px;
   font-family: $ff-oswald;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 24px;
   padding-bottom: 35px;
   margin-bottom: 13px;
@@ -14,17 +14,18 @@
   border-bottom: 1px solid $color-very-light-grey;
 
   @media (min-width: $vp-768) {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 36px;
     padding: 0;
     margin: 0 30px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
     border: none;
   }
 
   @media (min-width: $vp-1024) {
-    margin: 0 8%;
-    margin-bottom: 81px;
+    margin: 0 calc(8% - 4px);
+    margin-bottom: 79px;
+    font-size: 33px;
   }
 }
 
@@ -98,8 +99,8 @@
   @media (min-width: $vp-1024) {
     margin-bottom: 86px;
     display: grid;
-    grid-template-columns: repeat(4, 20.5%);
-    column-gap: 6%;
+    grid-template-columns: repeat(4, calc(25% - 5%));
+    column-gap: 7%;
   }
 }
 
@@ -109,7 +110,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   @media (min-width: $vp-768) {
     margin-bottom: 69px;
@@ -124,12 +125,12 @@
 .sub-products__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 19px;
-  margin-bottom: 13px;
+  padding-bottom: 18px;
+  margin-bottom: 12px;
   border-bottom: 1px solid $color-very-light-grey;
 
   @media (min-width: $vp-768) {
-    padding: 26px 38px 28px 38px;
+    padding: 26px 38px 27px 38px;
     margin: 0;
     border: 1px solid $color-very-light-grey;
 
@@ -162,6 +163,7 @@
   @media (min-width: $vp-768) {
     flex-direction: row;
     margin-bottom: 25px;
+    align-items: flex-end;
   }
 
   @media (min-width: $vp-1024) {
@@ -184,7 +186,7 @@
   width: 100%;
 
   @media (min-width: $vp-768) {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 20px;
     margin: 0;
     width: 50%;
@@ -204,7 +206,7 @@
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2, max-content);
-    column-gap: 30px;
+    column-gap: 36px;
     row-gap: 10px;
     margin-left: auto;
   }
@@ -215,6 +217,7 @@
     gap: 0;
     margin: 0;
     width: 100%;
+    margin-top: 2px;
   }
 }
 
@@ -236,6 +239,11 @@
 .sub-products__price {
   @media (min-width: $vp-768) {
     min-width: 56px;
+  }
+
+  @media (min-width: $vp-1024) {
+    justify-content: flex-start;
+    min-width: 41px;
   }
 }
 
@@ -295,7 +303,7 @@
       min-width: 707px;
       min-height: 200px;
       background-image: url(../img/catalog-icon-gift-tablet.svg);
-      background-position: 11% 50%;
+      background-position: 12.5% 50%;
     }
   }
 

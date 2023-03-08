@@ -69,9 +69,15 @@
   }
 
   @media (min-width: $vp-1024) {
-    width: 48%;
+    width: 46%;
     margin: 0;
     text-align: left;
+
+    &--catalog {
+      span {
+        width: 126px;
+      }
+    }
   }
 }
 
@@ -81,6 +87,13 @@
   @media (min-width: $vp-768) {
     margin-bottom: 19px;
     margin-top: -3px;
+  }
+
+  @media (min-width: $vp-1024) {
+    &--catalog {
+      width: 150px;
+      margin-bottom: 0;
+    }
   }
 }
 

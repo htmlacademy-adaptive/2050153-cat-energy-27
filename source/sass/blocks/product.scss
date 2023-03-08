@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  
+
   &--extra {
     align-items: center;
 
@@ -68,7 +68,7 @@
 
   @media (min-width: $vp-768) {
     margin: 0 auto;
-    margin-bottom: 21px;
+    margin-bottom: 11px;
     width: 174px;
     font-size: 20px;
     line-height: 24px;
@@ -82,7 +82,9 @@
 
   @media (min-width: $vp-1024) {
     width: 90%;
+    font-size: 19px;
     line-height: 21px;
+    margin-bottom: 16px;
 
     &--extra {
       margin-bottom: 27px;
@@ -128,6 +130,7 @@
   @media (min-width: $vp-1024) {
     width: 100%;
     min-width: 70%;
+    margin-bottom: 32px;
   }
 }
 
@@ -136,8 +139,12 @@
   justify-content: space-between;
 
   @media (min-width: $vp-768) {
-    padding: 9px 0;
+    padding: 8px 0;
     border-bottom: 1px solid $color-very-light-grey;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 8px 1px;
   }
 }
 

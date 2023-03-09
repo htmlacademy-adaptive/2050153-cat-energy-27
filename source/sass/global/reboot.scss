@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: $vp-320;
+  min-height: 100%;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $ff-lato;
+  color: $color-black;
+
+  background-color: $color-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

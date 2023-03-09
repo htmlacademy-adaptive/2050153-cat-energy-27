@@ -1,0 +1,148 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 100%;
+  padding: 0 6%;
+  padding-top: 24px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-width: $vp-320;
+    min-height: 302px;
+    background-image: url(../img/hero/hero-background-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-width: $vp-320;
+    min-height: 302px;
+    background-color: rgba($color-apple, 0.85);
+    top: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-left: 119px;
+    margin-top: 54px;
+    align-items: flex-start;
+    padding-top: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-1024) {
+    max-width: 1600px;
+    margin-top: 105px;
+    margin-left: 10%;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 22px;
+  display: flex;
+  width: 276px;
+  font-family: $ff-oswald;
+  font-size: 33px;
+  line-height: 39px;
+  text-align: center;
+  color: $color-white;
+  z-index: 1;
+
+  @media (min-width: $vp-768) {
+    font-size: 55px;
+    line-height: 60px;
+    color: $color-black;
+    align-items: flex-start;
+    width: 450px;
+    margin-bottom: 40px;
+    background-color: inherit;
+    text-align: start;
+  }
+}
+
+.hero__text {
+  margin: 0;
+  font-family: $ff-oswald;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  color: $color-white;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+  width: 250px;
+  z-index: 1;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-black;
+    justify-content: flex-start;
+    width: 450px;
+    margin-bottom: 49px;
+    background-color: inherit;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 52px;
+  }
+}
+
+.hero__image {
+  z-index: 1;
+  position: relative;
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 709px;
+    height: 609px;
+    margin-left: -88px;
+  }
+
+  @media (min-width: $vp-1024) {
+    top: -84px;
+    left: 40%;
+    width: 552px;
+    height: 500px;
+  }
+}
+
+.hero__button {
+  min-width: 280px;
+  min-height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  z-index: 1;
+  margin-top: -3px;
+
+  @media (min-width: $vp-768) {
+    order: 3;
+    z-index: 2;
+    margin: 0;
+    min-width: 244px;
+    min-height: 54px;
+    margin-bottom: 526px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 267px;
+  }
+}

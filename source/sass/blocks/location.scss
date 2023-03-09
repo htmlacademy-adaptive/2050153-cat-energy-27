@@ -1,0 +1,144 @@
+.location {
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+  @media (min-width: $vp-1024) {
+    background-color: $color-white-smoke;
+    min-height: 400px;
+  }
+}
+
+.location__wrapper {
+  display: flex;
+  min-width: $vp-320;
+  padding: 26px 20px 26px 20px;
+  background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    min-width: $vp-768;
+    padding: 60px 70px 48px 70px;
+  }
+
+  @media (min-width: $vp-1024) {
+    min-width: 39%;
+    margin: 95px 53% 0 calc(8% - 4px);
+    padding: 59px 5% 58px 5.5%;
+    z-index: 1;
+    background-color: $color-white;
+  }
+}
+
+.location__title {
+  margin: 0;
+  font-family: $ff-oswald;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-black-2;
+  width: 139px;
+  display: flex;
+  margin-right: auto;
+
+  @media (min-width: $vp-768) {
+    font-size: 19px;
+    line-height: 26px;
+    width: 175px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 48%;
+    margin-right: 84px;
+  }
+}
+
+.location__text-wrapper {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-charcoal-grey;
+  display: inline-block;
+  width: 139px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    width: 170px;
+    text-align: right;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 46%;
+    margin: 0;
+    text-align: left;
+
+    &--catalog {
+      span {
+        width: 126px;
+      }
+    }
+  }
+}
+
+.location__text {
+  margin: 0;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 19px;
+    margin-top: -3px;
+  }
+
+  @media (min-width: $vp-1024) {
+    &--catalog {
+      width: 150px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.location__map-wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  @media (min-width: $vp-1024) {
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-white-smoke;
+  }
+}
+
+.location__map {
+  height: 362px;
+  overflow: hidden;
+
+  @media (min-width: $vp-768) {
+    height: 400px;
+  }
+
+  @media (min-width: $vp-1024) {
+    object-fit: contain;
+    overflow: visible;
+  }
+}
+
+.location__map-image {
+  position: absolute;
+  top: calc(50% - 42px);
+  left: calc(50% - 25px);
+
+  @media (min-width: $vp-768) {
+    width: 113px;
+    height: 106px;
+    top: calc(50% - 56px);
+    left: calc(50% - 50px);
+  }
+
+  @media (min-width: $vp-1024) {
+    top: calc(45% - 49px);
+    left: calc(67% - 55px);
+  }
+}

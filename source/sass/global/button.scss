@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: $ff-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $color-white;
+  border: none;
+  background-color: $color-apple;
+  outline: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $color-limeade;
+}
+
+.button:active {
+  background-color: $color-limeade;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.button:focus-visible {
+  outline: 2px solid $color-charcoal-grey;
+  background-color: $color-apple;
+}
+
+.button:invalid {
+  background-color: $color-very-light-grey;
+}

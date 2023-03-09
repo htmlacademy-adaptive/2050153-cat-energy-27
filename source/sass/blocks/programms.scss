@@ -1,0 +1,249 @@
+.programms__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    gap: 30px;
+    min-width: 708px;
+  }
+
+  @media (min-width: $vp-1024) {
+    grid-template-columns: repeat(2, 47%);
+    gap: 6%;
+  }
+}
+
+.programms__item {
+  background-color: $color-white-smoke;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 22px 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    min-width: calc(100% - 14%);
+    height: 1px;
+    background-color: $color-gainsboro-grey;
+    bottom: 57px;
+    left: 20px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 77px 53px 57px 53px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-1024) {
+    min-width: 80%;
+    padding: 77px 11% 59px 9%;
+
+    &--tiger-cat {
+      padding-left: 10%;
+    }
+  }
+}
+
+.programms__title {
+  margin: 0;
+  font-family: $ff-oswald;
+  font-size: 23px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-left: 73px;
+  margin-bottom: 29px;
+
+  @media (min-width: $vp-768) {
+    font-size: 34px;
+    line-height: 36px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-left: calc(20% + 74px);
+    margin-bottom: 73px;
+  }
+}
+
+.programms__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  min-width: 227px;
+  text-align: start;
+  margin-bottom: 42px;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 57%;
+    min-width: 340px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+}
+
+.programms__button {
+  background-color: inherit;
+  color: $color-black;
+  justify-content: flex-start;
+  font-size: 16px;
+  line-height: 16px;
+  position: relative;
+
+  .programms__button-arrow {
+    transform: scaleX(1);
+    transform-origin: center left;
+    transition: transform 0.5s;
+    margin-left: 26px;
+  }
+
+  &:hover {
+    background-color: inherit;
+  }
+
+  &:hover .programms__button-arrow {
+    transform: scaleX(1.4);
+  }
+
+  &:active {
+    color: inherit;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 170px;
+    margin-top: auto;
+  }
+}
+
+.programms__container {
+  position: absolute;
+  top: 23px;
+  left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $color-apple;
+    top: 0;
+    left: calc(50% - 25px);
+    z-index: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    top: 92px;
+    left: 50%;
+    right: 0;
+    margin-left: auto;
+    margin-right: 61px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      left: calc(50% - 100px);
+      top: 0;
+    }
+  }
+
+  @media (min-width: $vp-1024) {
+    top: 41px;
+    left: 52px;
+    margin: 0;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      left: calc(50% - 50px);
+      top: 5px;
+    }
+  }
+}
+
+.programms__container--slim-cat {
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: $vp-768) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.programms__container--tiger-cat {
+  width: 67px;
+  height: 50px;
+  left: 16px;
+
+  @media (min-width: $vp-768) {
+    width: 268px;
+    height: 200px;
+    margin-right: 27px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 134px;
+    height: 100px;
+    left: 37px;
+  }
+}
+
+.programms__image {
+  display: flex;
+  z-index: 1;
+  margin-top: -6px;
+
+  @media (min-width: $vp-768) {
+    width: 140px;
+    height: 194px;
+    margin-top: -35px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 70px;
+    height: 97px;
+    margin-top: -14px;
+  }
+}
+
+.programms__container--tiger-cat .programms__image {
+  margin-top: 2px;
+
+  @media (min-width: $vp-768) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 134px;
+    height: 56px;
+  }
+}

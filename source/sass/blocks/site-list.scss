@@ -1,0 +1,128 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  position: absolute;
+  top: 67px;
+  left: 0;
+
+  @media (min-width: $vp-768) {
+    width: 440px;
+    position: relative;
+    padding: 0;
+    top: 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 100%;
+  }
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 67px;
+  background-color: inherit;
+  margin: 0;
+  z-index: 2;
+  border-bottom: 1px solid $color-whisper-grey;
+  background-color: $color-white;
+
+  & :hover {
+    opacity: 0.6;
+  }
+
+  & :active {
+    opacity: 0.3;
+  }
+
+  & :focus-visible {
+    outline: 2px solid $color-charcoal-grey;
+  }
+
+  & :invalid {
+    background-color: $color-whisper-grey;
+  }
+
+  @media (min-width: $vp-768) {
+    border: none;
+    z-index: 1;
+    width: max-content;
+  }
+
+  @media (min-width: $vp-1024) {
+    color: $color-white;
+    background-color: inherit;
+  }
+}
+
+.site-list:first-child {
+  border-top: 1px solid $color-whisper-grey;
+
+  @media (min-width: $vp-768) {
+    border: none;
+  }
+}
+
+.site-list__link {
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: $ff-oswald;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $vp-1024) {
+    color: $color-white;
+    background-color: inherit;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.site-list__link--current {
+  cursor: default;
+  pointer-events: none;
+}
+
+.site-list__link--current::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 33px;
+  left: 0;
+  background-color: $color-apple;
+
+  @media (min-width: $vp-1024) {
+    background-color: $color-white;
+    top: 35px;
+  }
+}
+
+.site-list__item--inner-page .site-list__link {
+  @media (min-width: $vp-1024) {
+    color: $color-black;
+  }
+}
+
+.site-list__item--inner-page .site-list__link--current::after {
+  @media (min-width: $vp-1024) {
+    background-color: $color-apple;
+  }
+}

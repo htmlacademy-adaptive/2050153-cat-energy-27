@@ -26,12 +26,36 @@
   width: 60%;
   margin-bottom: 35px;
   display: flex;
+  position: relative;
 
   @media (min-width: $vp-768) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
     width: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 178%;
+    height: 100%;
+    left: 0;
+    top: calc(50% - 1px);
+    border-top: 2px solid $color-apple;
+    z-index: -2;
+
+    @media (min-width: $vp-768) {
+      width: 121%;
+      top: calc(50% - 1px);
+      left: -69px;
+    }
+
+    @media (min-width: $vp-1024) {
+      width: 117.75%;
+      top: calc(50% - 1px);
+      left: -9%;
+    }
   }
 }
 
@@ -69,27 +93,6 @@
       width: calc(100% + 80px);
       height: 100%;
       left: -40px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 150vw;
-    height: 2px;
-    left: -20px;
-    top: 15px;
-    background-color: #68b738;
-    z-index: -2;
-
-    @media (min-width: $vp-768) {
-      left: -150px;
-      top: 20px;
-    }
-
-    @media (min-width: $vp-1024) {
-      width: 200vw;
-      left: -100vw;
     }
   }
 }

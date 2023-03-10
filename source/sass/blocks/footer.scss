@@ -10,14 +10,18 @@
 
   @media (min-width: $vp-768) {
     padding: 55px 30px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 5%;
   }
 
   @media (min-width: $vp-1024) {
     padding: 55px calc(8% - 4px);
-    justify-content: flex-start;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 5%;
   }
 }
 
@@ -43,24 +47,15 @@
 
   @media (min-width: $vp-768) {
     width: fit-content;
-    margin-right: 20.5%;
-    margin-top: 3px;
-  }
-
-  @media (min-width: $vp-1024) {
-    margin-right: 28%;
   }
 }
 
 .footer__social{
   @media (min-width: $vp-768) {
-    width: 132px;
-    margin-right: 17%;
-    margin-top: 4px;
-  }
-
-  @media (min-width: $vp-1024) {
-    margin-right: 31%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -69,10 +64,13 @@
   padding: 20px 0;
 
   @media (min-width: $vp-768) {
-    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   @media (min-width: $vp-1024) {
-    margin-top: -5px;;
+    // margin-top: -5px;;
   }
 }

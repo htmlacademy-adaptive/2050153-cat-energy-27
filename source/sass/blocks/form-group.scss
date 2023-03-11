@@ -296,6 +296,11 @@
   margin-bottom: 12px;
 }
 
+.form-group__control:focus-within .form-group__control-label--mark-radio::before,
+.form-group__control:focus-within .form-group__control-label--mark-checkbox::before {
+  border: 2px solid $color-silver-grey;
+}
+
 .form-group__input {
   border-radius: 50%;
   border: none;
@@ -359,7 +364,7 @@
     display: none;
   }
 
-  &:hover::before  {
+  &:hover::before {
     border: 1px solid $color-silver-grey;
   }
 
@@ -399,7 +404,7 @@
     display: none;
   }
 
-  &:hover::before  {
+  &:hover::before {
     border: 1px solid $color-silver-grey;
   }
 

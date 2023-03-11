@@ -96,7 +96,7 @@
     margin: 0;
     margin-bottom: 86px;
     display: grid;
-    grid-template-columns: repeat(4, 20.10%);
+    grid-template-columns: repeat(4, 20.1%);
     column-gap: 6.5%;
   }
 }
@@ -329,7 +329,6 @@
   display: flex;
   text-align: center;
   position: relative;
-  margin: 0;
   line-height: 20px;
   color: $color-white;
   z-index: 1;

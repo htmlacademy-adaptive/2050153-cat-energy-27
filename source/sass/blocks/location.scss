@@ -57,9 +57,8 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-charcoal-grey;
-  display: inline-block;
-  width: 139px;
   display: flex;
+  width: 139px;
   flex-direction: column;
 
   @media (min-width: $vp-768) {
@@ -113,11 +112,11 @@
 }
 
 .location__map-image {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 1;
-  display: block;
+  z-index: -1;
   width: 100%;
   height: auto;
   max-height: 362px;

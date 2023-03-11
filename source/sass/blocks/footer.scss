@@ -43,19 +43,15 @@
   }
 }
 
-.footer__logo-wrapper{
+.footer__logo-wrapper {
   margin: 0;
 
   @media (min-width: $vp-768) {
     width: fit-content;
   }
-
-  // @media (min-width: $vp-1024) {
-  //   margin-top: -6px;
-  // }
 }
 
-.footer__social{
+.footer__social {
   @media (min-width: $vp-768) {
     width: 100%;
     display: flex;
@@ -73,9 +69,5 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-  }
-
-  @media (min-width: $vp-1024) {
-    // margin-top: -5px;;
   }
 }

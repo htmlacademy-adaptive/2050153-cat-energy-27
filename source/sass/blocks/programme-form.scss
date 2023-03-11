@@ -9,13 +9,13 @@
   margin-bottom: 39px;
 
   @media (min-width: $vp-768) {
-    min-width: 630p;
-    padding-left: 69px;
+    min-width: 630px;
     margin-bottom: 66px;
+    padding: 0;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 0;
+    max-width: 1440px;
   }
 }
 
@@ -64,6 +64,7 @@
   }
 
   @media (min-width: $vp-1024) {
+    max-width: 1440px;
     margin: 0;
     margin-bottom: 82px;
   }

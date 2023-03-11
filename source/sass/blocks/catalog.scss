@@ -13,7 +13,8 @@
   }
 
   @media (min-width: $vp-1024) {
-    margin: 0 calc(8% - 4px);
+    max-width: 1440px;
+    padding: 0 calc(8% - 4px);
     margin-bottom: 75px;
   }
 }
@@ -36,7 +37,7 @@
   display: flex;
 
   @media (min-width: $vp-1024) {
-    & .location__wrapper {
+    & .catalog__location-wrapper {
       padding-bottom: 42px;
     }
   }

@@ -39,8 +39,8 @@
   }
 
   @media (min-width: $vp-1024) {
-    grid-template-columns: repeat(4, calc(25% - 5%));
-    column-gap: 7%;
+    grid-template-columns: repeat(4, 20.10%);
+    column-gap: 6.5%;
     row-gap: 63px;
     margin: 0;
   }

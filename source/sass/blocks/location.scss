@@ -22,6 +22,7 @@
 
   @media (min-width: $vp-1024) {
     min-width: 39%;
+    max-width: 1440px;
     margin: 95px 53% 0 calc(8% - 4px);
     padding: 59px 5% 58px 5.5%;
     z-index: 1;
@@ -111,6 +112,30 @@
   }
 }
 
+.location__map-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 362px;
+  background-color: $color-white-smoke;
+  object-fit: cover;
+
+  @media (min-width: $vp-768) {
+    max-height: 400px;
+  }
+
+  @media (min-width: $vp-1024) {
+    top: 0;
+    bottom: unset;
+    height: 100%;
+    max-height: none;
+  }
+}
+
 .location__map {
   height: 362px;
   overflow: hidden;
@@ -125,7 +150,7 @@
   }
 }
 
-.location__map-image {
+.location__map-pin {
   position: absolute;
   top: calc(50% - 42px);
   left: calc(50% - 25px);

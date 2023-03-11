@@ -37,6 +37,11 @@
   margin: 0 6%;
   margin-bottom: 40px;
 
+  & span {
+    width: 100%;
+    display: flex;
+  }
+
   @media (min-width: $vp-768) {
     font-size: 56px;
     line-height: 63px;
@@ -48,6 +53,10 @@
     padding: 69px calc(8% - 4px) 76px calc(8% - 4px);
     margin: 0;
     background-color: $color-white;
+
+    & span {
+      max-width: 1440px;
+    }
   }
 }
 

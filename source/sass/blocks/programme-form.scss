@@ -14,6 +14,10 @@
     margin-bottom: 66px;
     padding: 0;
   }
+
+  @media (min-width: $vp-1024) {
+    max-width: 1440px;
+  }
 }
 
 .programme-form__header {
@@ -61,6 +65,7 @@
   }
 
   @media (min-width: $vp-1024) {
+    max-width: 1440px;
     margin: 0;
     margin-bottom: 82px;
   }

@@ -11,6 +11,8 @@
   @media (min-width: $vp-768) {
     min-width: 630px;
     margin-bottom: 66px;
+    margin-left: 69px;
+    margin-right: 66px;
     padding: 0;
   }
 
@@ -22,12 +24,13 @@
 .programme-form__header {
   margin: 0;
   font-family: $ff-oswald;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 36px;
+  font-weight: inherit;
   margin-bottom: 36px;
 
   @media (min-width: $vp-768) {
-    font-size: 56px;
+    font-size: 60px;
     line-height: 60px;
     margin-bottom: 54px;
   }
@@ -91,7 +94,7 @@
   border: none;
   margin: 0;
   padding: 0 6%;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   margin-bottom: 23px;
   border-bottom: 1px solid $color-gainsboro-grey;
 
@@ -136,7 +139,7 @@
 }
 
 .programme-form__form-group--checkbox-form {
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 
   @media (min-width: $vp-768) {
     margin-bottom: 54px;

@@ -1,14 +1,15 @@
 .products-catalog__title {
   margin: 0;
   font-family: $ff-oswald;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 36px;
+  font-weight: inherit;
   width: 100%;
   padding: 27px 20px 41px 20px;
   border-bottom: 1px solid $color-whisper-grey-2;
 
   @media (min-width: $vp-768) {
-    font-size: 56px;
+    font-size: 60px;
     line-height: 60px;
     padding: 0 30px;
     margin-bottom: 90px;

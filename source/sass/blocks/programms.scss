@@ -56,14 +56,15 @@
 .programms__title {
   margin: 0;
   font-family: $ff-oswald;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 37px;
+  font-weight: inherit;
   text-transform: uppercase;
   margin-left: 73px;
   margin-bottom: 29px;
 
   @media (min-width: $vp-768) {
-    font-size: 34px;
+    font-size: 36px;
     line-height: 36px;
     margin-left: 0;
     margin-bottom: 24px;
@@ -83,6 +84,7 @@
   min-width: 227px;
   text-align: start;
   margin-bottom: 42px;
+  color: $color-charcoal-grey;
 
   @media (min-width: $vp-768) {
     font-size: 16px;
@@ -110,7 +112,7 @@
     transform: scaleX(1);
     transform-origin: center left;
     transition: transform 0.5s;
-    margin-left: 26px;
+    margin-left: 17px;
   }
 
   &:hover {
@@ -131,6 +133,10 @@
     line-height: 30px;
     width: 170px;
     margin-top: auto;
+
+    .programms__button-arrow {
+      margin-left: 25px;
+    }
   }
 }
 

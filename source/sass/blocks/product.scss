@@ -55,27 +55,28 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-nero-black-grey;
+  font-weight: inherit;
   width: 80px;
   margin-left: 50%;
   margin-bottom: 14px;
 
   &--extra {
-    width: 214px;
+    width: 203px;
     margin: 0 auto;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     margin-top: 53px;
   }
 
   @media (min-width: $vp-768) {
     margin: 0 auto;
     margin-bottom: 11px;
-    width: 174px;
+    width: 171px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
 
     &--extra {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       margin-top: 0;
     }
   }
@@ -164,7 +165,7 @@
   margin-bottom: 21px;
 
   @media (min-width: $vp-768) {
-    width: 100%;
+    width: 90%;
     min-width: 165px;
     text-align: center;
     font-size: 16px;

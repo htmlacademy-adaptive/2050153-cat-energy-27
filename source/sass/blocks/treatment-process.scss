@@ -1,13 +1,14 @@
 .treatment-process__title {
   margin: 0;
   font-family: $ff-oswald;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 40px;
+  font-weight: inherit;
   margin-bottom: 40px;
   min-width: 280px;
 
   @media (min-width: $vp-768) {
-    font-size: 56px;
+    font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;
   }

@@ -23,6 +23,7 @@
   font-family: $ff-oswald;
   font-size: 24px;
   line-height: 26px;
+  font-weight: inherit;
   width: 60%;
   margin-bottom: 35px;
   display: flex;
@@ -41,7 +42,7 @@
     width: 178%;
     height: 100%;
     left: 0;
-    top: calc(50% - 1px);
+    top: 15px;
     border-top: 2px solid $color-apple;
     z-index: -2;
 

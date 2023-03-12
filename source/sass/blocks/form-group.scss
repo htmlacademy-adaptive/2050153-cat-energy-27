@@ -206,6 +206,7 @@
   position: absolute;
   top: calc(50% - 8.5px);
   right: 0;
+  fill: none;
 
   @media (min-width: $vp-768) {
     margin-right: 18px;

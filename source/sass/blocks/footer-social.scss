@@ -13,16 +13,20 @@
   justify-content: center;
 }
 
+.footer-social__icon{
+  color: $color-dim-grey;
+}
+
 .footer-social__button {
   text-decoration: none;
   background-color: inherit;
   color: $color-dim-grey;
 
-  &:hover .footer-social__icon {
+  &:hover + .footer-social__icon {
     color: $color-apple;
   }
 
-  &:active .footer-social__icon {
+  &:active + .footer-social__icon {
     color: rgba($color-apple, 0.3);
   }
 
@@ -30,12 +34,8 @@
     outline: 2px solid $color-dim-grey;
   }
 
-  &:invalid .footer-social__icon {
+  &:invalid + .footer-social__icon {
     color: $color-very-light-grey;
     pointer-events: none;
   }
-}
-
-.footer-social__icon {
-  color: $color-dim-grey;
 }

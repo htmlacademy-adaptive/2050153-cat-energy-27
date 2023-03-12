@@ -5,7 +5,7 @@
   position: relative;
   min-width: 100%;
   padding: 0 6%;
-  padding-top: 24px;
+  padding-top: 29px;
   z-index: 1;
 
   &::before {
@@ -14,7 +14,7 @@
     width: 100%;
     min-width: $vp-320;
     min-height: 302px;
-    background-image: url(../img/hero/hero-background-mobile.jpg);
+    background-image: url("../img/hero/hero-background-mobile.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -52,18 +52,19 @@
 
 .hero__title {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   display: flex;
   width: 276px;
   font-family: $ff-oswald;
-  font-size: 33px;
-  line-height: 39px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: inherit;
   text-align: center;
   color: $color-white;
   z-index: 1;
 
   @media (min-width: $vp-768) {
-    font-size: 55px;
+    font-size: 60px;
     line-height: 60px;
     color: $color-black;
     align-items: flex-start;

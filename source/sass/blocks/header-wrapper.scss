@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $vp-1024) {
-    background-image: url(../../img/hero/hero-background-desktop.jpg);
+    background-image: url("../../img/hero/hero-background-desktop.jpg");
     background-position: top right calc(50% - 522px);
     background-repeat: no-repeat;
 

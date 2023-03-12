@@ -6,17 +6,16 @@
 .sub-products__title {
   padding: 0 20px;
   font-family: $ff-oswald;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 24px;
+  font-weight: inherit;
   padding-bottom: 35px;
   margin: 0;
-  margin-bottom: 13px;
   display: flex;
-  border-bottom: 1px solid $color-very-light-grey;
   position: relative;
 
   @media (min-width: $vp-768) {
-    font-size: 34px;
+    font-size: 36px;
     line-height: 36px;
     padding: 0 30px;
     margin-bottom: 79px;
@@ -35,7 +34,7 @@
     width: 100%;
     height: 100%;
     left: 0;
-    top: calc(50% - 1px);
+    top: calc(50% - 15px);
     border-top: 2px solid $color-apple;
     z-index: -2;
 
@@ -126,10 +125,19 @@
   margin-bottom: 12px;
   border-bottom: 1px solid $color-very-light-grey;
 
+  &:first-child {
+    border-top: 1px solid $color-very-light-grey;
+    padding-top: 13px;
+  }
+
   @media (min-width: $vp-768) {
     padding: 26px 38px 27px 38px;
     margin: 0;
     border: 1px solid $color-very-light-grey;
+
+    &:first-child {
+      padding-top: 26px;
+    }
 
     &:not(:first-child) {
       margin-top: -1px;
@@ -177,13 +185,31 @@
   font-family: $ff-oswald;
   font-size: 16px;
   line-height: 16px;
+  font-weight: inherit;
   color: $color-nero-black-grey;
   text-transform: uppercase;
   margin-bottom: 13px;
   width: 100%;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    text-shadow: 0 3px 3px rgba($color-black, 0.5);
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
   @media (min-width: $vp-768) {
-    font-size: 19px;
+    font-size: 20px;
     line-height: 20px;
     margin: 0;
     width: 50%;
@@ -266,7 +292,7 @@
     width: 100%;
     min-width: 280px;
     min-height: 290px;
-    background-image: url(../img/catalog-cat-background.jpg);
+    background-image: url("../img/catalog-cat-background.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,7 +305,7 @@
     min-width: 280px;
     min-height: 290px;
     background-color: rgba($color-apple, 0.85);
-    background-image: url(../img/catalog-icon-gift.svg);
+    background-image: url("../img/catalog-icon-gift.svg");
     background-position: 50% 59px;
     background-repeat: no-repeat;
     top: 0;
@@ -291,7 +317,7 @@
     justify-content: flex-start;
 
     &::before {
-      background-image: url(../img/catalog-cat-background-tablet.jpg);
+      background-image: url("../img/catalog-cat-background-tablet.jpg");
       min-width: 707px;
       min-height: 200px;
     }
@@ -299,7 +325,7 @@
     &::after {
       min-width: 707px;
       min-height: 200px;
-      background-image: url(../img/catalog-icon-gift-tablet.svg);
+      background-image: url("../img/catalog-icon-gift-tablet.svg");
       background-position: 12.5% 50%;
     }
   }
@@ -311,7 +337,7 @@
     justify-content: center;
 
     &::before {
-      background-image: url(../../img/catalog-cat-background-desktop.jpg);
+      background-image: url("../../img/catalog-cat-background-desktop.jpg");
       background-position: 50% 50%;
       min-width: 20.5%;
       min-height: 289px;

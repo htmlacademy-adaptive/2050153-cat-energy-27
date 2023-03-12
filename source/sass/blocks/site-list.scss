@@ -13,6 +13,12 @@
     padding: 0;
     top: 0;
   }
+
+  @media (min-width: $vp-1024) {
+    min-width: 477px;
+    margin-left: auto;
+    column-gap: 7%;
+  }
 }
 
 .site-list__item {
@@ -21,7 +27,6 @@
   align-items: center;
   width: 100%;
   min-height: 67px;
-  background-color: inherit;
   margin: 0;
   z-index: 2;
   border-bottom: 1px solid $color-whisper-grey;
@@ -72,7 +77,7 @@
   font-family: $ff-oswald;
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
   position: relative;
 
   @media (min-width: $vp-768) {

@@ -31,8 +31,9 @@
 
 .example__title {
   font-family: $ff-oswald;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 40px;
+  font-weight: inherit;
   min-width: 88%;
   margin: 0 6%;
   margin-bottom: 40px;
@@ -43,8 +44,8 @@
   }
 
   @media (min-width: $vp-768) {
-    font-size: 56px;
-    line-height: 63px;
+    font-size: 60px;
+    line-height: 60px;
     margin: 0 30px;
     margin-bottom: 61px;
   }
@@ -119,7 +120,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   min-width: 280px;
 
   @media (min-width: $vp-768) {
@@ -145,6 +146,7 @@
   font-family: $ff-oswald;
   font-size: 24px;
   line-height: 24px;
+  font-weight: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,7 +174,7 @@
   text-align: center;
   width: 80px;
   background-color: $color-whisper-grey-3;
-  margin-top: -7px;
+  margin-top: -9px;
 
   @media (min-width: $vp-768) {
     background-color: $color-white;

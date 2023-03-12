@@ -7,6 +7,10 @@
   }
 }
 
+.copyright__icon {
+  color: inherit;
+}
+
 .copyright__link {
   pointer-events: none;
   display: flex;
@@ -18,10 +22,12 @@
   width: 100%;
 
   &:hover .copyright__icon {
+    fill: $color-apple;
     color: $color-apple;
   }
 
   &:active .copyright__icon {
+    fill: rgba($color-apple, 0.3);
     color: rgba($color-apple, 0.3);
   }
 

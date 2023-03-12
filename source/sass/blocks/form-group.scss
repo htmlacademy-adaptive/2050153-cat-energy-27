@@ -23,6 +23,7 @@
   font-family: $ff-oswald;
   font-size: 24px;
   line-height: 26px;
+  font-weight: inherit;
   width: 60%;
   margin-bottom: 35px;
   display: flex;
@@ -41,7 +42,7 @@
     width: 178%;
     height: 100%;
     left: 0;
-    top: calc(50% - 1px);
+    top: 15px;
     border-top: 2px solid $color-apple;
     z-index: -2;
 
@@ -200,17 +201,12 @@
   }
 }
 
-.form-group__field::-webkit-outer-spin-button,
-.form-group__field::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .form-group__icon {
   margin-right: 15px;
   position: absolute;
   top: calc(50% - 8.5px);
   right: 0;
+  fill: none;
 
   @media (min-width: $vp-768) {
     margin-right: 18px;
@@ -397,7 +393,7 @@
   }
 
   &::after {
-    content: url(../img/form-checkbox-icon-checked-mobile.svg);
+    content: url("../img/form-checkbox-icon-checked-mobile.svg");
     position: absolute;
     left: 6px;
     top: calc(50% - 7.5px);
@@ -415,7 +411,7 @@
     }
 
     &::after {
-      content: url(../img/form-checkbox-icon-checked-tablet.svg);
+      content: url("../img/form-checkbox-icon-checked-tablet.svg");
       left: 8px;
       top: calc(50% - 12.5px);
     }

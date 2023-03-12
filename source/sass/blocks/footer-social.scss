@@ -13,6 +13,10 @@
   justify-content: center;
 }
 
+.footer-social__icon {
+  color: $color-dim-grey;
+}
+
 .footer-social__button {
   text-decoration: none;
   background-color: inherit;
@@ -20,10 +24,12 @@
 
   &:hover .footer-social__icon {
     color: $color-apple;
+    fill: $color-apple;
   }
 
   &:active .footer-social__icon {
     color: rgba($color-apple, 0.3);
+    fill: rgba($color-apple, 0.3);
   }
 
   &:focus-visible {
@@ -32,10 +38,7 @@
 
   &:invalid .footer-social__icon {
     color: $color-very-light-grey;
+    fill: $color-very-light-grey;
     pointer-events: none;
   }
-}
-
-.footer-social__icon {
-  color: $color-dim-grey;
 }

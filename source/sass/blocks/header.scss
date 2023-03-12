@@ -46,7 +46,8 @@
   }
 
   @media (min-width: $vp-1024) {
-    width: calc(40% - 99px);
+    // width: calc(40% - 99px);
+    width: 50%;
     margin-right: calc(8% - 4px);
   }
 }

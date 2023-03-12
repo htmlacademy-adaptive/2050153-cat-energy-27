@@ -1,13 +1,14 @@
 .treatment-process__title {
   margin: 0;
   font-family: $ff-oswald;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 40px;
+  font-weight: inherit;
   margin-bottom: 40px;
   min-width: 280px;
 
   @media (min-width: $vp-768) {
-    font-size: 56px;
+    font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;
   }
@@ -112,7 +113,7 @@
     &::after {
       width: 80px;
       height: 80px;
-      top: 41px
+      top: 41px;
     }
 
     &::before {
@@ -123,24 +124,24 @@
 
 .treatment-process__text--icon-leaf {
   &::before {
-    content: url(../../img/treatment-process-leaf-icon.svg);
+    content: url("../img/treatment-process-leaf-icon.svg");
   }
 }
 
 .treatment-process__text--icon-cup {
   &::before {
-    content: url(../../img/treatment-process-cup-icon.svg);
+    content: url("../img/treatment-process-cup-icon.svg");
   }
 }
 
 .treatment-process__text--icon-cutlary {
   &::before {
-    content: url(../../img/treatment-process-cutlary-icon.svg);
+    content: url("../img/treatment-process-cutlary-icon.svg");
   }
 }
 
 .treatment-process__text--icon-watch {
   &::before {
-    content: url(../../img/treatment-process-watch-icon.svg);
+    content: url("../img/treatment-process-watch-icon.svg");
   }
 }

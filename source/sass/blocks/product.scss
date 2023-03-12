@@ -50,6 +50,7 @@
 
 .product__title {
   margin: 0;
+  text-decoration: none;
   font-family: $ff-oswald;
   font-size: 16px;
   line-height: 20px;
@@ -59,12 +60,30 @@
   width: 80px;
   margin-left: 50%;
   margin-bottom: 14px;
+  outline: transparent;
 
   &--extra {
     width: 203px;
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 53px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    text-shadow: 0 3px 3px rgba($color-black, 0.5);
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    pointer-events: none;
   }
 
   @media (min-width: $vp-768) {
@@ -90,6 +109,25 @@
     &--extra {
       margin-bottom: 27px;
     }
+  }
+}
+
+.product__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-within {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    pointer-events: none;
   }
 }
 

@@ -140,7 +140,7 @@
     }
 
     &:not(:first-child) {
-      margin-top: -1px;;
+      margin-top: -1px;
     }
   }
 
@@ -190,6 +190,23 @@
   text-transform: uppercase;
   margin-bottom: 13px;
   width: 100%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    text-shadow: 0 3px 3px rgba($color-black, 0.5);
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    pointer-events: none;
+  }
 
   @media (min-width: $vp-768) {
     font-size: 20px;
@@ -275,7 +292,7 @@
     width: 100%;
     min-width: 280px;
     min-height: 290px;
-    background-image: url(../img/catalog-cat-background.jpg);
+    background-image: url("../img/catalog-cat-background.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,7 +305,7 @@
     min-width: 280px;
     min-height: 290px;
     background-color: rgba($color-apple, 0.85);
-    background-image: url(../img/catalog-icon-gift.svg);
+    background-image: url("../img/catalog-icon-gift.svg");
     background-position: 50% 59px;
     background-repeat: no-repeat;
     top: 0;
@@ -300,7 +317,7 @@
     justify-content: flex-start;
 
     &::before {
-      background-image: url(../img/catalog-cat-background-tablet.jpg);
+      background-image: url("../img/catalog-cat-background-tablet.jpg");
       min-width: 707px;
       min-height: 200px;
     }
@@ -308,7 +325,7 @@
     &::after {
       min-width: 707px;
       min-height: 200px;
-      background-image: url(../img/catalog-icon-gift-tablet.svg);
+      background-image: url("../img/catalog-icon-gift-tablet.svg");
       background-position: 12.5% 50%;
     }
   }
@@ -320,7 +337,7 @@
     justify-content: center;
 
     &::before {
-      background-image: url(../../img/catalog-cat-background-desktop.jpg);
+      background-image: url("../../img/catalog-cat-background-desktop.jpg");
       background-position: 50% 50%;
       min-width: 20.5%;
       min-height: 289px;

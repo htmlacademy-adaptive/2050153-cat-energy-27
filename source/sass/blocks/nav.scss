@@ -63,12 +63,12 @@
 }
 
 .nav--closed .nav__toggle {
-  background-image: url(../img/toggle-open-button.svg);
+  background-image: url("../img/toggle-open-button.svg");
   background-position: 0 0;
 }
 
 .nav--opened .nav__toggle {
-  background-image: url(../img/toggle-close-button.svg);
+  background-image: url("../img/toggle-close-button.svg");
 }
 
 .nav--nojs .nav__toggle {

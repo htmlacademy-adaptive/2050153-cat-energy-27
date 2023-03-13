@@ -1,7 +1,6 @@
 .nav {
   @media (min-width: $vp-1024) {
     display: flex;
-    justify-content: flex-end;
   }
 }
 
@@ -19,7 +18,7 @@
 
 .nav__toggle {
   display: block;
-  margin-top: 27px;
+  margin-top: 24px;
   margin-right: 6%;
   position: absolute;
   cursor: pointer;
@@ -98,8 +97,11 @@
 
 .nav--nojs .nav__list {
   position: static;
-  display: block;
   width: 100%;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
 }
 
 .nav--nojs .nav__item {

@@ -45,6 +45,8 @@
 
   @media (min-width: $vp-1024) {
     max-width: 1440px;
+    width: 100%;
+    min-width: 1024px;
     margin-top: 105px;
     margin-left: 10%;
   }

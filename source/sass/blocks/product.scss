@@ -102,12 +102,12 @@
 
   @media (min-width: $vp-1024) {
     width: 90%;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 21px;
     margin-bottom: 16px;
 
     &--extra {
-      margin-bottom: 27px;
+      margin-bottom: 24px;
     }
   }
 }
@@ -200,7 +200,7 @@
 }
 
 .product__description--extra {
-  margin-bottom: 21px;
+  margin-bottom: 19px;
 
   @media (min-width: $vp-768) {
     width: 90%;
@@ -211,7 +211,7 @@
   }
 
   @media (min-width: $vp-1024) {
-    min-width: 90%;
+    width: 100%;
   }
 }
 

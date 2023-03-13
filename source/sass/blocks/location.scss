@@ -9,6 +9,17 @@
   }
 }
 
+.location__container {
+  z-index: 3;
+
+  @media (min-width: $vp-1024) {
+    max-width: 1440px;
+    width: 100%;
+    min-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
 .location__wrapper {
   display: flex;
   min-width: $vp-320;
@@ -22,7 +33,6 @@
 
   @media (min-width: $vp-1024) {
     min-width: 39%;
-    max-width: 1440px;
     margin: 95px 53% 0 calc(8% - 4px);
     padding: 59px 5% 58px 5.5%;
     z-index: 1;
@@ -113,11 +123,11 @@
 }
 
 .location__map-image {
-  display: none;
+  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: auto;
   max-height: 362px;
@@ -139,6 +149,7 @@
 .location__map {
   height: 362px;
   overflow: hidden;
+  z-index: 2;
 
   @media (min-width: $vp-768) {
     height: 400px;
@@ -154,6 +165,7 @@
   position: absolute;
   top: calc(50% - 42px);
   left: calc(50% - 25px);
+  z-index: 3;
 
   @media (min-width: $vp-768) {
     width: 113px;

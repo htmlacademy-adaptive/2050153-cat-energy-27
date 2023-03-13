@@ -18,6 +18,10 @@
 
   @media (min-width: $vp-1024) {
     padding: 0 7.5%;
+    max-width: 1440px;
+    width: 100%;
+    min-width: 1024px;
+    margin: 0 auto;
   }
 }
 

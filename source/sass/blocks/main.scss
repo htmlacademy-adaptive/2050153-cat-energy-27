@@ -21,6 +21,7 @@
   }
 
   @media (min-width: $vp-1024) {
+    margin: 0 auto;
     margin-bottom: 70px;
     width: 100%;
     max-width: 1440px;
@@ -44,6 +45,7 @@
     width: 100%;
     max-width: 1440px;
     padding: 0 calc(8% - 4px);
+    margin: 0 auto;
     margin-bottom: -2px;
   }
 }

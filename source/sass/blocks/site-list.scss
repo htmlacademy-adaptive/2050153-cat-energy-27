@@ -102,13 +102,15 @@
 }
 
 .site-list__link--current::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  top: 33px;
-  left: 0;
-  background-color: $color-apple;
+  @media (min-width: $vp-768) {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 31px;
+    left: 0;
+    background-color: $color-apple;
+  }
 
   @media (min-width: $vp-1024) {
     background-color: $color-white;
